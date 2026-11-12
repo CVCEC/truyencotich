@@ -26,6 +26,7 @@ Nút **EN** ở góc trên hiện lời giải thích tiếng Anh ngắn ở m�
 | `style.css` | Màu sắc, phông chữ |
 | `assets/` | Logo và hình Trâu Con chính thức (không vẽ lại, không kéo giãn) |
 | `audio/` | File ghi âm giọng Elio (thêm sau) |
+| `robots.txt` | Chặn công cụ AI thu thập dữ liệu và chặn Google đưa ảnh lên kết quả tìm kiếm |
 | `AM-THANH.md` | Danh sách câu cần ghi âm và tên file tương ứng |
 | `tools/am-thanh.mjs` | Tạo lại `AM-THANH.md` sau khi sửa truyện: `node tools/am-thanh.mjs` |
 
@@ -50,6 +51,18 @@ Chép một khối `T({ … })` trong file truyện, đổi `id`, rồi sửa n�
 ## Tiến độ của học sinh
 
 Ngôi sao, Sổ từ và bài suy ngẫm được lưu trên trình duyệt của từng máy (không cần đăng nhập). Đổi máy hoặc xóa dữ liệu trình duyệt thì bắt đầu lại.
+
+## Chỉ xem trực tuyến (bảo vệ nội dung)
+
+Giống trang Triển lãm Em học tiếng Việt:
+
+- Mọi tranh truyện đều có dòng chữ chìm “© CVCEC · Trường Tiếng Việt Của Em · Chỉ xem, không sao chép”.
+- Chặn nhấn chuột phải và nhấn giữ để lưu ảnh trên tranh, chặn kéo thả ảnh, chặn phím Ctrl/Cmd+S và Ctrl/Cmd+P. Nếu in, trang chỉ ra một dòng báo “chỉ để xem trực tuyến”.
+- Không có nút tải về. (Nút “Sao chép để gửi thầy cô” chỉ sao chép bài suy ngẫm do chính học sinh viết.)
+- `robots.txt` và thẻ `meta robots`: yêu cầu Google không đưa ảnh lên kết quả tìm kiếm hình ảnh, chặn các công cụ AI thu thập dữ liệu.
+- Khung “Lưu ý về sử dụng tài liệu · Terms of use” (tiếng Việt và tiếng Anh) ở cuối mọi trang, đường dẫn thẳng: `#dieu-khoan`.
+
+Các biện pháp này làm việc sao chép khó hơn với người dùng thông thường, nhưng không thể chặn tuyệt đối (ví dụ chụp màn hình). Chữ chìm giúp tranh luôn mang tên CVCEC nếu bị chụp lại.
 
 ## Về nội dung
 

@@ -7,13 +7,14 @@
 <meta name="description" content="30 ngày, 30 câu chuyện cổ tích Việt Nam cho các bạn nhỏ: sách lật, từ cần nhớ, nhân vật, thông điệp, trò chơi và suy ngẫm. Trường Tiếng Việt Của Em – CVCEC.">
 <meta property="og:title" content="Trâu Con Kể Chuyện | Trường Tiếng Việt Của Em">
 <meta property="og:description" content="Mỗi ngày một câu chuyện cổ tích Việt Nam, có sách lật, trò chơi và phần suy ngẫm. Trường Tiếng Việt Của Em – CVCEC.">
+<meta name="robots" content="noimageindex, noarchive, noai, noimageai">
 <link rel="icon" href="assets/trau-reading.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <a class="logo" href="#trang-dau" aria-label="Trâu Con Kể Chuyện, trang đầu"><img src="assets/logo.png" alt="Trường Tiếng Việt Của Em" width="118" height="46"></a>
+  <a class="logo" href="#trang-dau" aria-label="Trâu Con Kể Chuyện, trang đầu"><img src="assets/logo.png" alt="Trường Tiếng Việt Của Em" width="118" height="46" draggable="false"></a>
   <nav class="nav" aria-label="Mục chính">
     <a href="#trang-dau" data-r="trang-dau">Trang đầu</a><a href="#ba-muoi-ngay" data-r="ba-muoi-ngay">30 ngày kể chuyện</a><a href="#so-tu" data-r="so-tu">Sổ từ của em</a><a href="#huong-dan" data-r="huong-dan">Bố mẹ, thầy cô</a>
   </nav>
@@ -24,12 +25,23 @@
   </div>
 </div></header>
 <main class="wrap" id="app"></main>
+<section class="terms wrap" id="dieu-khoan" aria-labelledby="terms-title">
+  <div class="terms-box">
+    <h2 id="terms-title">Lưu ý về sử dụng tài liệu <span class="tx-en">· Terms of use</span></h2>
+    <p>Các câu chuyện, tranh minh họa, trò chơi và bản ghi âm trên trang này được đăng tải miễn phí để các bạn nhỏ, gia đình và thầy cô học tiếng Việt trực tuyến, và có thể được dùng cho nghiên cứu về tiếng Việt như một ngoại ngữ. Thầy cô và các nhà nghiên cứu ngôn ngữ muốn tìm hiểu thêm xin liên hệ <a href="mailto:contact@cvcec.org">contact@cvcec.org</a>.</p>
+    <p>Trang hoàn toàn <b>phi lợi nhuận</b>. Tài liệu <b>không được</b> sử dụng vào mục đích thương mại, và không được sao chép, tải xuống hay chia sẻ lại dưới bất kỳ hình thức nào khi chưa có sự đồng ý bằng văn bản của CVCEC. Gia đình và thầy cô được chia sẻ đường link tới trang.</p>
+    <hr>
+    <p class="tx-en">The stories, illustrations, games and recordings on this site are published free of charge so that children, families and teachers can learn Vietnamese online, and may be used for research on Vietnamese as a foreign language. Teachers and language researchers who would like more information may contact <a href="mailto:contact@cvcec.org">contact@cvcec.org</a>.</p>
+    <p class="tx-en">This site is entirely <b>non-profit</b>. The materials may <b>not</b> be used for any commercial purpose, and may not be copied, downloaded or shared in any form without written permission from CVCEC. Families and teachers are welcome to share the link to this site.</p>
+  </div>
+</section>
 <footer class="foot wrap">
-  <p><a href="https://truongtiengvietcuaem.cvcec.org/hoc-tap">‹ Về Trường Tiếng Việt Của Em</a></p>
+  <p><a href="https://truongtiengvietcuaem.cvcec.org/hoc-tap">‹ Về Trường Tiếng Việt Của Em</a> · <a href="#dieu-khoan">Lưu ý về sử dụng tài liệu</a></p>
   <p class="copy">Copyrighted by CVCEC Trường Tiếng Việt Của Em 2026</p>
 </footer>
 <div id="pop" class="pop" role="dialog" aria-modal="false" hidden></div>
 <div id="toast" role="status" hidden></div>
+<div class="print-only">Trâu Con Kể Chuyện chỉ để xem trực tuyến tại truyencotich.cvcec.org.<br>Online viewing only. © CVCEC · Trường Tiếng Việt Của Em</div>
 
 <script src="art.js"></script>
 <script src="truyen-01-10.js"></script>

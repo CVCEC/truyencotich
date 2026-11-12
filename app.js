@@ -138,7 +138,7 @@
     const td = todayStory(), done = ALL.filter((t) => isDone(t.id)).length;
     app.innerHTML = `
       <section class="hero">
-        <img class="mascot" src="${IMG('wave')}" alt="Trâu Con vẫy tay chào">
+        <img class="mascot" src="${IMG('wave')}" alt="Trâu Con vẫy tay chào" draggable="false">
         <div>
           <p class="eyebrow">Trường Tiếng Việt Của Em · Kho truyện cổ tích</p>
           <h1>Trâu Con <span>Kể Chuyện</span></h1>
@@ -532,6 +532,16 @@
     if (e.key === 'ArrowLeft') turn(cur.t, cur.page - 1);
   });
 
+  /* ── chỉ xem: hạn chế lưu ảnh, kéo thả, lưu trang và in trang ── */
+  const guarded = 'img, svg, .pic, .face, .pcard, .story-card, .sheet, .fcard';
+  document.addEventListener('contextmenu', (e) => { if (e.target.closest && e.target.closest(guarded)) e.preventDefault(); });
+  document.addEventListener('dragstart', (e) => { if (e.target.closest && e.target.closest(guarded)) e.preventDefault(); });
+  const noDrag = () => document.querySelectorAll('img:not([draggable])').forEach((i) => i.setAttribute('draggable', 'false'));
+  new MutationObserver(noDrag).observe(document.body, { childList: true, subtree: true });
+  document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && ['s', 'p'].includes((e.key || '').toLowerCase())) { e.preventDefault(); toast('Trang này chỉ để xem trực tuyến.'); }
+  });
+
   /* ── điều hướng ── */
   function route() {
     closePop(); stopSpeak();
@@ -544,6 +554,7 @@
     if (h === 'so-tu') { mark('so-tu'); viewNotebook(); }
     else if (h === 'huong-dan') { mark('huong-dan'); viewGuide(); }
     else if (h === 'ba-muoi-ngay') { mark('ba-muoi-ngay'); viewHome(true); return; }
+    else if (h === 'dieu-khoan') { mark('trang-dau'); viewHome(); document.getElementById('dieu-khoan').scrollIntoView(); return; }
     else { mark('trang-dau'); viewHome(); }
     window.scrollTo(0, 0);
   }

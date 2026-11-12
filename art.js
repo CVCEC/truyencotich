@@ -427,7 +427,8 @@ window.ART = (function () {
     const toks = String(dsl || 'day').trim().split(/\s+/);
     const bg = BG[toks[0]] ? BG[toks[0]]() : BG.day();
     const body = toks.slice(BG[toks[0]] ? 1 : 0).map((t) => item(t, cast)).join('');
-    return `<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice">${bg}${body}</svg>`;
+    const mark = `<text x="312" y="195" text-anchor="end" font-size="7" font-weight="700" font-family="Nunito, Arial, sans-serif" fill="#3A3B3C" fill-opacity=".42" stroke="#FFFFFF" stroke-opacity=".55" stroke-width="1.6" paint-order="stroke" pointer-events="none">© CVCEC · Trường Tiếng Việt Của Em · Chỉ xem, không sao chép</text>`;
+    return `<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid slice">${bg}${body}${mark}</svg>`;
   }
   /* chân dung nhân vật: vẽ một vật, khung tự co theo hình (app.js đo lại) */
   function portrait(tok, cast) {
