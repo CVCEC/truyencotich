@@ -1,17 +1,26 @@
 /* Trâu Con Kể Chuyện — giao diện
-   Cùng bảng màu, phông chữ, nút và thanh trên với Kho Báu Lời Ông Bà để các trang của trường trông như một nhà.
+   Dùng bộ mẫu chung "Làng Trâu Con" (https://mau.cvcec.org/v1/cvcec-chung.css): màu và phông lấy từ biến --ttv-*.
+   Thanh trên cùng (logo, các góc học) và dòng bản quyền do cvcec-chung.js chèn vào.
    Một giao diện sáng (giấy be), cố ý không có chế độ tối. */
 :root {
-  --paper: #F4F0EA; --paper-2: #ECE4D6; --card: #FFFDF8; --ink: #3A3B3C; --muted: #6E665C; --line: #E0D5C3;
-  --straw: #DDAA55; --straw-l: #F3DFB4; --straw-xl: #FAEFD6; --wood: #C68B59; --wood-d: #8C5A31;
-  --leaf: #6FA86A; --leaf-d: #3E7A47; --leaf-l: #E2EED8; --peach: #F2B28F; --peach-l: #FBE3D6;
-  --good: #3B8148; --good-bg: #DCEFD7; --bad: #B9503D; --bad-bg: #FADCD4; --sky: #DCEEF0;
-  --g-ct: #A0622A; --g-ct-bg: #F5E4C4; --g-tt: #BE5A48; --g-tt-bg: #F9DED3; --g-nn: #3E7A47; --g-nn-bg: #E2EED8;
-  --font: 'Nunito', 'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif;
+  /* Biến cũ trỏ sang biến chung --ttv-* của bộ mẫu "Làng Trâu Con" (mau.cvcec.org/v1).
+     Màu nhấn của trang = màu góc học "cotich" (--ttv-goc / --ttv-goc-dam / --ttv-goc-nhat), do cvcec-chung.js gán. */
+  --paper: var(--ttv-nen); --paper-2: var(--ttv-vien); --card: var(--ttv-the); --ink: var(--ttv-chu); --muted: var(--ttv-chu-phu); --line: var(--ttv-vien);
+  --straw: var(--ttv-goc); --straw-l: var(--ttv-goc-nhat); --straw-xl: var(--ttv-goc-nhat); --wood: var(--ttv-goc); --wood-d: var(--ttv-goc-dam);
+  --sky: var(--ttv-troi);
+  /* Màu chức năng của trang (giữ trong trang; đã làm đậm cho đạt AA 4,5:1) */
+  --leaf: #4F804B; --leaf-d: #3B7343; --leaf-l: #E2EED8; --peach: #F2B28F; --peach-l: #FBE3D6;
+  --good: #3B8148; --good-bg: #DCEFD7; --bad: #B9503D; --bad-bg: #FADCD4;
+  --g-ct: #905826; --g-ct-bg: #F5E4C4; --g-tt: #A14939; --g-tt-bg: #F9DED3; --g-nn: #3B7343; --g-nn-bg: #E2EED8;
+  --font: var(--ttv-phong);
+  --font-read: var(--ttv-phong-tap-doc);
   --r: 18px; --r-sm: 12px;
   --step--1: 0.875rem; --step-0: 1.0625rem; --step-1: 1.25rem; --step-2: 1.6rem; --step-3: 2.1rem; --step-4: clamp(2.1rem, 6vw, 3.4rem);
   --read: clamp(1.2rem, 1rem + 0.9vw, 1.5rem);
   color-scheme: light;
+}
+@supports (background: color-mix(in srgb, red 50%, blue)) {
+  :root { --straw-l: color-mix(in srgb, var(--ttv-goc) 25%, var(--ttv-goc-nhat)); }
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -20,7 +29,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 img { max-width: 100%; }
 a { color: inherit; }
 button { font: inherit; color: inherit; cursor: pointer; }
-:focus-visible { outline: 3px solid var(--straw); outline-offset: 2px; border-radius: 8px; }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; border-radius: 8px; }
 h1, h2, h3 { font-weight: 900; line-height: 1.15; text-wrap: balance; margin: 0; }
 p { margin: 0; }
 .wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
@@ -29,8 +38,6 @@ p { margin: 0; }
 /* ── thanh trên (giống Kho Báu) ── */
 .top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--card); border-bottom: 2px solid var(--line); }
 .top .wrap { display: flex; align-items: center; gap: 14px; padding-block: 8px; }
-.logo { display: block; flex: none; line-height: 0; }
-.logo img { height: 46px; width: auto; }
 .nav { display: flex; gap: 4px; flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; }
 .nav::-webkit-scrollbar { display: none; }
 .nav a { flex: none; text-decoration: none; padding: 8px 12px; border-radius: 999px; font-weight: 800; font-size: 0.95rem; color: var(--muted); }
@@ -42,22 +49,20 @@ p { margin: 0; }
 .icon-btn { width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--line); background: var(--card); display: grid; place-items: center; }
 .icon-btn svg { width: 20px; height: 20px; }
 .en-toggle { height: 40px; min-width: 44px; padding: 0 10px; border-radius: 999px; border: 2px solid var(--line); background: var(--card); font-weight: 900; font-size: 0.85rem; letter-spacing: .06em; color: var(--muted); }
-.en-toggle[aria-pressed="true"] { background: var(--sky); border-color: #9CC7CF; color: var(--ink); }
+.en-toggle[aria-pressed="true"] { background: var(--sky); border-color: var(--ink); color: var(--ink); }
 @media (max-width: 760px) {
   .top .wrap { flex-wrap: wrap; row-gap: 4px; }
-  .logo img { height: 38px; }
   .tools { margin-left: auto; }
   .nav { order: 3; flex-basis: 100%; padding-bottom: 4px; }
 }
 main { padding-block: 22px 40px; min-height: 60vh; }
-.foot { padding-block: 26px 34px; text-align: center; color: var(--muted); font-size: var(--step--1); }
-.foot .copy { opacity: .55; margin-top: 6px; font-size: 0.78rem; letter-spacing: .02em; }
+.foot { padding-block: 26px 0; text-align: center; color: var(--muted); font-size: var(--step--1); }
 .foot a { font-weight: 800; }
 
 /* ── nút, chữ phụ ── */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 10px 20px; border-radius: 999px; border: 2px solid var(--ink); background: var(--card); font-weight: 900; text-decoration: none; box-shadow: 0 3px 0 var(--ink); transition: transform .08s; text-align: center; }
 .btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--ink); }
-.btn.primary { background: var(--straw); }
+.btn.primary { background: var(--ttv-goc-dam); border-color: var(--ttv-goc-dam); color: #fff; box-shadow: 0 3px 0 var(--ink); }
 .btn.green { background: var(--leaf); color: #fff; }
 .btn.small { min-height: 40px; padding: 6px 14px; font-size: 0.95rem; }
 .btn.ghost { box-shadow: none; border-color: var(--line); }
@@ -93,14 +98,16 @@ body.show-en span.en { display: inline; }
 /* ── trang đầu ── */
 .hero { display: grid; grid-template-columns: auto 1fr; gap: 18px 26px; align-items: center; background: var(--card); border: 2px solid var(--line); border-radius: 26px; padding: 22px 26px; position: relative; overflow: hidden; }
 .hero::after { content: ""; position: absolute; right: -60px; bottom: -80px; width: 260px; height: 260px; border-radius: 50%; background: var(--straw-xl); z-index: 0; }
-.hero > * { position: relative; z-index: 1; }
+.hero > *:not(.ttv-canh-trang-tri) { position: relative; z-index: 1; }
+.hero.ttv-canh { background: var(--ttv-troi); border-color: var(--ttv-vien); padding-bottom: 120px; }
+.hero.ttv-canh::after { display: none; }
 .hero .mascot { width: clamp(120px, 20vw, 190px); }
 .hero h1 { font-size: var(--step-4); letter-spacing: -.01em; }
 .hero h1 span { color: var(--wood-d); }
 .hero .lead { font-size: var(--step-1); margin-top: 6px; }
 .hero .row { margin-top: 16px; }
 .today-btn small { display: block; font-size: .8rem; font-weight: 800; opacity: .8; }
-@media (max-width: 640px) { .hero { grid-template-columns: 1fr; text-align: center; padding: 18px; } .hero .mascot { margin: 0 auto; } .hero .row { justify-content: center; } }
+@media (max-width: 640px) { .hero { grid-template-columns: 1fr; text-align: center; padding: 18px; } .hero.ttv-canh { padding-bottom: 90px; } .hero .mascot { margin: 0 auto; } .hero .row { justify-content: center; } }
 .progress { display: flex; align-items: center; gap: 12px; margin-top: 14px; }
 .bar { flex: 1; height: 14px; border-radius: 999px; background: var(--paper-2); overflow: hidden; max-width: 380px; }
 .bar i { display: block; height: 100%; background: var(--leaf); border-radius: 999px; }
@@ -118,7 +125,7 @@ body.show-en span.en { display: inline; }
 .story-card .meta { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
 .story-card .day-badge { position: absolute; left: 10px; top: 10px; background: var(--card); border: 2px solid var(--ink); border-radius: 999px; padding: 2px 10px; font-weight: 900; font-size: .85rem; }
 .story-card.today { border-color: var(--straw); box-shadow: 0 0 0 4px var(--straw-l); }
-.story-card.today .day-badge { background: var(--straw); }
+.story-card.today .day-badge { background: var(--ttv-goc-dam); border-color: var(--ttv-goc-dam); color: #fff; }
 .story-card .done-badge { position: absolute; right: 10px; top: 10px; background: var(--leaf); color: #fff; border-radius: 999px; padding: 2px 10px; font-weight: 900; font-size: .8rem; }
 .stars { display: inline-flex; gap: 2px; }
 .stars svg { width: 16px; height: 16px; }
@@ -165,7 +172,7 @@ body.show-en span.en { display: inline; }
 .sheet .pic svg { width: 100%; height: 100%; display: block; min-height: 100%; }
 .sheet .txt { padding: 26px 30px 22px 34px; display: flex; flex-direction: column; gap: 14px; }
 .sheet .cap { font-size: var(--step-1); color: var(--wood-d); }
-.sheet .story-text { font-size: var(--read); line-height: 1.75; font-weight: 700; }
+.sheet .story-text { font-family: var(--font-read); font-size: var(--read); line-height: 1.75; font-weight: 700; }
 .sheet .pno { margin-top: auto; display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-size: .9rem; }
 .sheet .corner { position: absolute; right: 0; bottom: 0; width: 46px; height: 46px; border: 0; padding: 0; background: linear-gradient(135deg, transparent 50%, var(--straw-l) 50%); border-top-left-radius: 10px; box-shadow: -2px -2px 4px rgba(0,0,0,.08); }
 .sheet.cover { grid-template-columns: 1fr; background: var(--straw-xl); }
@@ -208,7 +215,7 @@ body.show-en span.en { display: inline; }
 .aside .bub { background: var(--sky); border-radius: 14px; padding: 8px 12px; font-weight: 800; font-size: .98rem; }
 
 .pop { position: fixed; z-index: 40; width: min(340px, calc(100vw - 24px)); background: var(--card); border: 2px solid var(--ink); border-radius: 18px; padding: 14px 16px; box-shadow: 0 8px 0 rgba(58,59,60,.15); }
-.pop .w-big { font-size: 1.7rem; font-weight: 900; color: var(--wood-d); line-height: 1.2; }
+.pop .w-big { font-family: var(--font-read); font-size: 1.7rem; font-weight: 900; color: var(--wood-d); line-height: 1.2; }
 .pop .mean { margin-top: 6px; font-weight: 700; }
 .pop .en { display: block; margin-top: 6px; }
 .pop .row { margin-top: 10px; }
@@ -219,7 +226,7 @@ body.show-en span.en { display: inline; }
 .message img { width: clamp(110px, 18vw, 170px); }
 .message .big { font-size: clamp(1.3rem, 1rem + 1.4vw, 1.9rem); font-weight: 900; line-height: 1.35; margin-top: 6px; }
 .saying { margin-top: 16px; background: var(--card); border-left: 6px solid var(--straw); border-radius: 12px; padding: 12px 16px; }
-.saying b { font-size: 1.15rem; }
+.saying b { font-family: var(--font-read); font-size: 1.15rem; }
 @media (max-width: 640px) { .message { grid-template-columns: 1fr; text-align: center; } .message img { margin: 0 auto; } }
 
 /* xếp tranh */
@@ -251,7 +258,7 @@ body.show-en span.en { display: inline; }
 .quiz .opts { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin-top: 18px; }
 .quiz .opts.words { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
 .opt { min-height: 56px; border: 2px solid var(--ink); border-radius: 16px; background: var(--card); box-shadow: 0 3px 0 var(--ink); font-weight: 900; font-size: 1.1rem; padding: 10px 14px; text-align: left; }
-.opts.words .opt { text-align: center; font-size: 1.25rem; }
+.opts.words .opt { font-family: var(--font-read); text-align: center; font-size: 1.25rem; }
 .opt:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--ink); }
 .opt.ok { background: var(--good-bg); border-color: var(--good); box-shadow: 0 3px 0 var(--good); }
 .opt.no { background: var(--bad-bg); border-color: var(--bad); box-shadow: 0 3px 0 var(--bad); animation: shake .4s; opacity: .6; }
@@ -263,10 +270,10 @@ body.show-en span.en { display: inline; }
 .pips i.now { background: var(--straw); }
 .flash { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px; margin-bottom: 18px; }
 .fcard { perspective: 800px; border: 0; padding: 0; background: none; min-height: 110px; }
-.fcard .in { position: relative; width: 100%; height: 100%; min-height: 110px; transition: transform .45s; transform-style: preserve-3d; }
+.fcard .in { display: block; position: relative; width: 100%; height: 100%; min-height: 110px; transition: transform .45s; transform-style: preserve-3d; }
 .fcard.flip .in { transform: rotateY(180deg); }
 .fcard .f, .fcard .b { position: absolute; inset: 0; border-radius: 16px; display: grid; place-items: center; padding: 10px; backface-visibility: hidden; text-align: center; }
-.fcard .f { background: var(--straw-xl); border: 2px solid var(--straw); font-size: 1.35rem; font-weight: 900; color: var(--wood-d); }
+.fcard .f { font-family: var(--font-read); background: var(--straw-xl); border: 2px solid var(--straw); font-size: 1.35rem; font-weight: 900; color: var(--wood-d); }
 .fcard .b { background: var(--card); border: 2px solid var(--leaf); transform: rotateY(180deg); font-size: .92rem; font-weight: 700; line-height: 1.35; }
 .done-box { text-align: center; background: var(--card); border: 2px solid var(--line); border-radius: 22px; padding: 26px; }
 .done-box img { width: 140px; }
@@ -281,14 +288,14 @@ body.show-en span.en { display: inline; }
 .think { display: grid; gap: 18px; margin-top: 18px; }
 .think label { font-weight: 900; font-size: 1.15rem; display: block; }
 .think textarea { width: 100%; min-height: 120px; margin-top: 8px; border: 2px solid var(--line); border-radius: 16px; padding: 12px 14px; font: inherit; font-size: 1.1rem; background: #FFFEFB; resize: vertical; line-height: 1.6; }
-.think textarea:focus { outline: none; border-color: var(--straw); }
+.think textarea:focus { outline: none; border-color: var(--ttv-goc-dam); }
 .starters { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
 .starters button { border: 2px dashed var(--wood); background: var(--straw-xl); border-radius: 999px; padding: 4px 12px; font-weight: 800; font-size: .92rem; }
 
 /* sổ từ, hướng dẫn */
 .notebook { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
 .note { background: var(--card); border: 2px solid var(--line); border-radius: 16px; padding: 12px 14px; }
-.note b { font-size: 1.25rem; color: var(--wood-d); }
+.note b { font-family: var(--font-read); font-size: 1.25rem; color: var(--wood-d); }
 .note small { display: block; color: var(--muted); font-weight: 800; margin-top: 4px; }
 .guide { display: grid; gap: 14px; }
 .guide .card h3 { font-size: 1.2rem; margin-bottom: 6px; }

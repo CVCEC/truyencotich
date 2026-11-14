@@ -95,8 +95,10 @@
     stopSpeak();
     if (file && !missing.has(file)) {
       const a = new Audio(file); player = a;
-      a.addEventListener('error', () => { missing.add(file); if (player === a) tts(text); }, { once: true });
-      a.play().catch(() => { missing.add(file); if (player === a) tts(text); });
+      let fellBack = false; // lỗi tải tệp và play() thất bại đều báo về: chỉ đọc bằng giọng máy một lần
+      const fallback = () => { if (fellBack) return; fellBack = true; missing.add(file); if (player === a) tts(text); };
+      a.addEventListener('error', fallback, { once: true });
+      a.play().catch(fallback);
       return;
     }
     tts(text);
@@ -106,7 +108,7 @@
   function toast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => { t.hidden = true; }, 3200); }
   function confetti(n = 36) {
     if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const cols = ['#DDAA55', '#6FA86A', '#F2B28F', '#BE5A48', '#7FB3D9', '#F6D36B'];
+    const cols = ['var(--straw)', 'var(--leaf)', 'var(--peach)', 'var(--g-tt)', '#7FB3D9', '#F6D36B'];
     for (let i = 0; i < n; i++) {
       const c = document.createElement('i'); c.className = 'confetti';
       c.style.left = Math.random() * 100 + 'vw'; c.style.background = rand(cols); c.style.animationDelay = Math.random() * 0.4 + 's'; c.style.animationDuration = 1.2 + Math.random() * 0.9 + 's';
@@ -137,8 +139,8 @@
   function viewHome(scrollToGrid) {
     const td = todayStory(), done = ALL.filter((t) => isDone(t.id)).length;
     app.innerHTML = `
-      <section class="hero">
-        <img class="mascot" src="${IMG('wave')}" alt="Trâu Con vẫy tay chào" draggable="false">
+      <section class="hero ttv-canh">
+        <img class="mascot" src="${IMG('reading')}" alt="Trâu Con đọc truyện" draggable="false">
         <div>
           <p class="eyebrow">Trường Tiếng Việt Của Em · Kho truyện cổ tích</p>
           <h1>Trâu Con <span>Kể Chuyện</span></h1>
@@ -159,10 +161,11 @@
         <div class="grid" style="margin-top:16px">${ALL.filter((t) => filter === 'all' || t.genre === filter).map((t) => card(t, td)).join('')}</div>
       </section>
       <section class="section card guide-teaser">
-        <img src="${IMG('reading')}" alt="">
+        <img src="${IMG('wave')}" alt="">
         <div><h2 style="font-size:var(--step-1)">Mỗi ngày khoảng 20 phút</h2><p class="muted">Gặp nhân vật → đọc sách lật → thông điệp → bốn trò chơi → viết suy ngẫm. Tiến độ được lưu trên máy của các bạn.</p></div>
         <a class="btn small" href="#huong-dan">Xem hướng dẫn</a>
       </section>`;
+    if (window.TTV && window.TTV.trangTriCanh) window.TTV.trangTriCanh();
     if (scrollToGrid) document.getElementById('luoi').scrollIntoView();
   }
   function card(t, td) {
@@ -547,6 +550,8 @@
     closePop(); stopSpeak();
     const h = location.hash.replace('#', '');
     const m = h.match(/^t(\d{2})(?:-([a-z]+))?$/);
+    /* bộ mẫu chung: màn đọc truyện và màn chơi dùng nền kem trơn; màn chào dùng cảnh trời – mây – ruộng */
+    if (m && byId[+m[1]]) document.body.setAttribute('data-ttv-nen', 'don-gian'); else document.body.removeAttribute('data-ttv-nen');
     document.querySelectorAll('.nav a').forEach((a) => a.removeAttribute('aria-current'));
     const mark = (r) => { const a = document.querySelector(`.nav a[data-r="${r}"]`); if (a) a.setAttribute('aria-current', 'page'); };
     if (m && byId[+m[1]]) { mark('ba-muoi-ngay'); viewStory(byId[+m[1]], m[2] || 'nv'); window.scrollTo(0, 0); return; }
