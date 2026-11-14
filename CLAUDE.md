@@ -33,6 +33,7 @@
 5. Tiếng Việt: chuẩn hoá NFC khi so sánh chữ; đọc chữ cái theo âm (a, bờ, cờ, dờ…); không ghi cách đọc dưới chữ.
 6. Trâu Con xưng "mình", gọi học sinh "các bạn"; hiền, ấm, chậm.
 7. Âm thanh dùng tệp giọng chuẩn của trường; không dùng giọng máy của thiết bị (speechSynthesis).
+   NGOẠI LỆ RIÊNG KHO truyencotich (tạm thời): giữ giọng máy làm dự phòng khi chưa có tệp giọng Elio trong audio/, vì đọc to là phần chính của truyện. Không gỡ giọng máy cho đến khi đủ 290 tệp trong AM-THANH.md. Xem README.
 8. Không đưa tên, logo Khai Minh Đức lên game và slide.
 9. Không hiện tên trẻ, phụ huynh. Triển lãm và Về Nhà Em chỉ để xem (hạn chế tải về) và có ghi chú điều khoản sử dụng, liên hệ contact@cvcec.org.
 10. Mỗi trang tối đa 1 GB; mỗi tệp dưới 25 MB. Hỏi tôi trước khi thêm video mới.
