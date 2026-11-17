@@ -77,31 +77,42 @@
   }
   const sfx = { ok: () => tone([660, 880]), bad: () => tone([240, 190], 0.2, 'triangle'), flip: () => tone([420, 560], 0.07, 'triangle', 0.05, 0.08), win: () => tone([523, 659, 784, 1047], 0.2, 'sine', 0.12), pop: () => tone([720, 960], 0.08, 'sine', 0.06, 0.12) };
 
-  /* ── đọc to: ưu tiên file ghi âm (giọng Elio) trong audio/, nếu chưa có thì dùng giọng tiếng Việt của máy ── */
-  let voices = [], player = null;
-  const missing = new Set();
-  const loadVoices = () => { try { voices = speechSynthesis.getVoices(); } catch (e) { voices = []; } };
-  if ('speechSynthesis' in window) { loadVoices(); speechSynthesis.onvoiceschanged = loadVoices; }
-  function stopSpeak() { try { if (player) { player.pause(); player = null; } if ('speechSynthesis' in window) speechSynthesis.cancel(); } catch (e) { /* bỏ qua */ } }
-  function tts(text) {
-    if (!('speechSynthesis' in window)) { toast('Trình duyệt này chưa đọc to được. Các bạn đọc to cùng bố mẹ nhé!'); return; }
-    loadVoices();
-    const v = voices.find((x) => /^vi/i.test(x.lang));
-    if (!v) { toast('Máy này chưa có giọng đọc tiếng Việt. Các bạn đọc to cùng bố mẹ nhé!'); return; }
-    const u = new SpeechSynthesisUtterance(text); u.voice = v; u.lang = v.lang; u.rate = 0.82;
-    speechSynthesis.speak(u);
+  /* ── đọc to: ưu tiên file ghi âm (giọng Elio) trong audio/, chưa có thì giọng tiếng Việt của máy (ngoại lệ tạm thời của kho này).
+        Từ 17-11-2026 đi qua bộ mẫu: TTV.phat({ tep, chu }) phát tệp, tệp lỗi thì bộ mẫu đọc "chu" bằng giọng máy.
+        Trang không gọi speechSynthesis trực tiếp; dừng đọc bằng TTV.giong.dung(). ── */
+  let player = null;
+  const missing = new Set(); // tệp đã biết là chưa có: lần chạm sau đọc thẳng bằng giọng máy (iPad chặn đọc khi trễ sau cú chạm)
+  const ttvPhat = (muc) => { const T = window.TTV; if (!T) return null; if (T.phat) return T.phat(muc); return T.giong && T.giong.phat ? T.giong.phat(muc) : null; };
+  function stopSpeak() {
+    try { if (player) { player.pause(); player = null; } } catch (e) { /* bỏ qua */ }
+    try { if (window.TTV && TTV.giong && TTV.giong.dung) TTV.giong.dung(); } catch (e) { /* bỏ qua */ }
   }
   function speak(text, file) {
     stopSpeak();
-    if (file && !missing.has(file)) {
-      const a = new Audio(file); player = a;
-      let fellBack = false; // lỗi tải tệp và play() thất bại đều báo về: chỉ đọc bằng giọng máy một lần
-      const fallback = () => { if (fellBack) return; fellBack = true; missing.add(file); if (player === a) tts(text); };
-      a.addEventListener('error', fallback, { once: true });
-      a.play().catch(fallback);
-      return;
+    const tep = file && !missing.has(file) ? file : '';
+    if (tep) { // dò xem tệp có không, để ghi nhớ tệp thiếu
+      const thu = new Audio(); thu.preload = 'metadata';
+      thu.addEventListener('error', () => missing.add(tep), { once: true });
+      thu.src = tep;
     }
-    tts(text);
+    if (ttvPhat(tep ? { tep, chu: text } : { chu: text })) return;
+    // bộ mẫu chưa nạp: chỉ phát được tệp ghi âm
+    if (!tep) { toast('Trâu Con chưa đọc to được. Các bạn đọc to cùng bố mẹ nhé!'); return; }
+    const a = new Audio(tep); player = a;
+    let baoLoi = false;
+    const loi = () => { if (baoLoi) return; baoLoi = true; missing.add(tep); if (player === a) toast('Trâu Con chưa đọc to được. Các bạn đọc to cùng bố mẹ nhé!'); };
+    a.addEventListener('error', loi, { once: true });
+    a.play().catch(loi);
+  }
+
+  /* ── ghi kết quả học lên cổng (bộ mẫu gửi; không tạo khoá localStorage mới). Mỗi phần có sao là một hoạt động. ── */
+  let batDauPhan = Date.now();
+  const saoTheoTiLe = (d, m) => { const r = m ? d / m : 0; return r >= 0.9 ? 3 : r >= 0.6 ? 2 : r > 0 ? 1 : 0; };
+  function ghiKQ(t, k, diem, toiDa) {
+    try {
+      if (!window.TTV || !TTV.ghiKetQua) return;
+      TTV.ghiKetQua({ bai: 't' + pad(t.id), hoatDong: k, soTroChoi: STAR.length, diem, diemToiDa: toiDa, sao: saoTheoTiLe(diem, toiDa), thoiGianGiay: Math.round((Date.now() - batDauPhan) / 1000) });
+    } catch (e) { /* bỏ qua */ }
   }
 
   let toastT;
@@ -246,6 +257,7 @@
 
   /* 2 · sách lật */
   function pRead(t, el) {
+    batDauPhan = Date.now();
     el.innerHTML = `${head('Đọc truyện', 'Tap a yellow word to see its meaning. Swipe or use the arrows to turn the page.')}
       <div class="book-wrap"><div class="book" id="book"></div>
         <div class="book-ctrl">
@@ -308,7 +320,7 @@
       ov.addEventListener('animationend', done, { once: true }); setTimeout(() => { if (turning) done(); }, 900);
     }
     drawDots(t);
-    if (to === t.pages.length) award(t, 'doc');
+    if (to === t.pages.length) { award(t, 'doc'); if (!cur.daGhiDoc) { cur.daGhiDoc = true; ghiKQ(t, 'doc', t.pages.length, t.pages.length); } }
     const top = book.getBoundingClientRect().top; if (top < 70) window.scrollBy({ top: top - 80, behavior: reduce ? 'auto' : 'smooth' });
   }
 
@@ -329,8 +341,9 @@
     return Array.from({ length: k }, (_, i) => Math.round((i * (n - 1)) / (k - 1)));
   }
   function pOrder(t, el) {
+    batDauPhan = Date.now();
     const idx = orderIdx(t), n = idx.length;
-    const st = { slots: Array(n).fill(null), tray: shuffle(idx.map((_, i) => i)) };
+    const st = { slots: Array(n).fill(null), tray: shuffle(idx.map((_, i) => i)), lan: 0, dungLanDau: 0 };
     if (st.tray.every((v, i) => v === i)) st.tray.reverse();
     const pc = (i, extra = '') => { const pg = t.pages[idx[i]]; return `<button type="button" class="pcard" data-i="${i}" ${extra}><span class="pic">${ART.scene(pg[1], castOf(t))}</span><span class="c">${esc(pg[0])}</span></button>`; };
     function draw(msg) {
@@ -350,13 +363,14 @@
     };
     function check() {
       const wrong = st.slots.map((v, s) => (v === s ? -1 : s)).filter((s) => s >= 0);
+      if (st.lan++ === 0) st.dungLanDau = n - wrong.length; // điểm: số tranh đúng chỗ ở lần xếp đầu
       el.querySelectorAll('.slot').forEach((sl, s) => sl.classList.add(wrong.includes(s) ? 'no' : 'ok'));
       if (!wrong.length) { sfx.ok(); setTimeout(() => retell(), 700); return; }
       sfx.bad();
       setTimeout(() => { wrong.forEach((s) => { const v = st.slots[s]; st.slots[s] = null; st.tray[st.tray.indexOf(null)] = v; }); draw(`Có ${wrong.length} tranh chưa đúng chỗ, mình đã lấy ra rồi. Các bạn thử lại nhé!`); }, 1100);
     }
     function retell() {
-      award(t, 'xep');
+      award(t, 'xep'); ghiKQ(t, 'xep', st.dungLanDau, n);
       el.onclick = null;
       el.innerHTML = `${head('Bây giờ, các bạn kể lại nhé!', 'Now retell the story using the pictures.')}
         ${trau('cheer', 'Đúng hết rồi! Bây giờ các bạn nhìn tranh và kể lại câu chuyện bằng lời của mình cho bố mẹ hoặc bạn bè nghe nhé. Quên thì chạm vào tranh để xem gợi ý!', 'All correct! Look at the pictures and tell the story in your own words. Tap a picture for a hint.')}
@@ -367,6 +381,7 @@
 
   /* trò chơi chọn đáp án dùng chung (đúng mới đi tiếp, có đếm lần đúng ngay) */
   function runQuiz(el, rounds, o) {
+    batDauPhan = Date.now();
     let r = 0, first = 0, tried = false;
     function draw() {
       if (r >= rounds.length) { o.onDone(first, rounds.length); return; }
@@ -417,7 +432,7 @@
       const opts = shuffle([w, ...otherWords(t, w, 3)]);
       return { q: `Từ nào có nghĩa là: <span style="color:var(--wood-d)">“${esc(t.words[w][0])}”</span>?`, qen: '', hint: t.words[w][1], opts, ans: opts.indexOf(w), say: w };
     });
-    runQuiz(el, rounds, { words: true, head: head('Đố từ', 'Which word matches the meaning? Tap “EN” for an English hint.') + trau('thinking', 'Mình đọc nghĩa, các bạn tìm từ đúng nhé!', 'I read the meaning — you find the word!'), onDone: (f, n) => { award(t, 'do'); el.innerHTML = doneBox(t, 'do', f, n, 'Các bạn nhớ từ giỏi quá!'); } });
+    runQuiz(el, rounds, { words: true, head: head('Đố từ', 'Which word matches the meaning? Tap “EN” for an English hint.') + trau('thinking', 'Mình đọc nghĩa, các bạn tìm từ đúng nhé!', 'I read the meaning — you find the word!'), onDone: (f, n) => { award(t, 'do'); ghiKQ(t, 'do', f, n); el.innerHTML = doneBox(t, 'do', f, n, 'Các bạn nhớ từ giỏi quá!'); } });
   }
 
   /* 6 · điền từ: câu lấy từ chính trang truyện, chỗ trống là từ cần nhớ */
@@ -440,19 +455,20 @@
     });
   }
   function pFill(t, el) {
-    runQuiz(el, fillRounds(t), { words: true, head: head('Điền từ vào chỗ trống', 'Choose the missing word.') + trau('listening', 'Câu này đang thiếu một từ. Các bạn chọn từ đúng để điền vào chỗ trống nhé!', 'One word is missing. Choose the right one!'), onDone: (f, n) => { award(t, 'dien'); el.innerHTML = doneBox(t, 'dien', f, n, 'Điền đúng hết rồi!'); } });
+    runQuiz(el, fillRounds(t), { words: true, head: head('Điền từ vào chỗ trống', 'Choose the missing word.') + trau('listening', 'Câu này đang thiếu một từ. Các bạn chọn từ đúng để điền vào chỗ trống nhé!', 'One word is missing. Choose the right one!'), onDone: (f, n) => { award(t, 'dien'); ghiKQ(t, 'dien', f, n); el.innerHTML = doneBox(t, 'dien', f, n, 'Điền đúng hết rồi!'); } });
   }
 
   /* 7 · tình huống */
   function pSituation(t, el) {
     const rounds = t.quiz.map(([q, opts, ans, why]) => { const order = shuffle(opts.map((_, i) => i)); return { q: esc(q), opts: order.map((i) => opts[i]), ans: order.indexOf(ans), why }; });
-    runQuiz(el, rounds, { head: head('Câu đố tình huống', 'What happens in the story — and what would you do?') + trau('thinking', 'Các bạn đọc kỹ rồi chọn câu trả lời nhé. Không có gì phải vội!', 'Read carefully and choose. No need to hurry!'), onDone: (f, n) => { award(t, 'th'); el.innerHTML = doneBox(t, 'th', f, n, 'Các bạn suy nghĩ thật giỏi!'); } });
+    runQuiz(el, rounds, { head: head('Câu đố tình huống', 'What happens in the story — and what would you do?') + trau('thinking', 'Các bạn đọc kỹ rồi chọn câu trả lời nhé. Không có gì phải vội!', 'Read carefully and choose. No need to hurry!'), onDone: (f, n) => { award(t, 'th'); ghiKQ(t, 'th', f, n); el.innerHTML = doneBox(t, 'th', f, n, 'Các bạn suy nghĩ thật giỏi!'); } });
   }
 
   /* 8 · suy ngẫm */
   const FEEL = [['😊', 'Vui'], ['😮', 'Bất ngờ'], ['😢', 'Buồn'], ['🤔', 'Suy nghĩ'], ['🥰', 'Xúc động']];
   const STARTERS = ['Mình nghĩ rằng…', 'Mình thích nhất là…, vì…', 'Nếu mình là…, mình sẽ…', 'Câu chuyện dạy mình…'];
   function pReflect(t, el) {
+    batDauPhan = Date.now();
     const nt = S.notes[t.id] = S.notes[t.id] || { feel: null, a: t.think.map(() => '') };
     el.innerHTML = `${head('Suy ngẫm', 'Think and write a few sentences.')}
       ${trau('reading', 'Các bạn viết vài câu về điều mình nghĩ nhé. Viết ngắn thôi cũng được, mình rất muốn đọc! Bố mẹ có thể viết giúp khi các bạn kể.', 'Write a few sentences. Short is fine! A parent can write while you speak.')}
@@ -522,7 +538,7 @@
         const nt = S.notes[t.id], fb = document.getElementById('sn-fb');
         const ok = nt.a.filter((x) => (x || '').trim().split(/\s+/).filter(Boolean).length >= 3).length;
         if (!nt.feel || ok < t.think.length) { sfx.bad(); fb.innerHTML = `<div style="margin-top:14px">${trau('thinking', !nt.feel ? 'Các bạn chọn một cảm xúc trước nhé!' : 'Các bạn viết mỗi câu ít nhất vài chữ nhé. Bấm vào câu gợi ý để bắt đầu dễ hơn!', 'Pick a feeling and write at least a few words for each question.')}</div>`; break; }
-        award(t, 'sn');
+        award(t, 'sn'); ghiKQ(t, 'sn', ok, t.think.length);
         fb.innerHTML = `<div class="done-box" style="margin-top:16px"><img src="${IMG('wave')}" alt="Trâu Con vẫy tay"><h2>Cảm ơn các bạn đã chia sẻ!</h2><p class="muted" style="margin-top:6px">${isDone(t.id) ? `Các bạn đã hoàn thành Ngày ${t.id}. Hẹn gặp lại các bạn ở câu chuyện ngày mai nhé!` : 'Các bạn xem lại các phần còn thiếu sao nhé.'}</p><div class="row">${t.id < ALL.length ? `<a class="btn primary" href="#t${pad(t.id + 1)}">Ngày ${t.id + 1}: ${esc(byId[t.id + 1].title)} ${ICON.right}</a>` : '<a class="btn primary" href="#ba-muoi-ngay">Về 30 ngày kể chuyện</a>'}</div></div>`;
         break; }
       case 'copy-think': { const txt = thinkText(t); try { navigator.clipboard.writeText(txt).then(() => toast('Đã sao chép! Các bạn dán vào tin nhắn gửi thầy cô nhé.'), () => toast('Máy chưa cho sao chép. Bố mẹ chụp màn hình gửi thầy cô nhé.')); } catch (err) { toast('Máy chưa cho sao chép. Bố mẹ chụp màn hình gửi thầy cô nhé.'); } break; }

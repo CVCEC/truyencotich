@@ -63,12 +63,12 @@ Nội quy chung (`CLAUDE.md`, quy tắc 7) yêu cầu chỉ dùng tệp giọng 
 - Đọc to là phần chính của truyện: các bạn nhỏ đang tập đọc cần nghe lời truyện. Bỏ giọng máy khi chưa có đủ tệp ghi âm thì nút “Nghe đọc” sẽ không đọc được gì.
 - Hiện thư mục `audio/` chưa có tệp ghi âm nào (30 truyện cần hơn 300 tệp).
 
-Cách nút đọc to đang chạy (trong `app.js`, hàm `speak`):
+Cách nút đọc to đang chạy (trong `app.js`, hàm `speak`; từ 17-11-2026 đi qua bộ mẫu `TTV.phat({ tep, chu })`, trang không gọi speechSynthesis trực tiếp):
 
-1. Ưu tiên phát tệp giọng Elio trong `audio/` (ví dụ `audio/t01-p03.mp3`).
-2. Chưa có tệp đó thì dùng giọng tiếng Việt có sẵn trên máy (speechSynthesis). Máy không có giọng tiếng Việt thì hiện lời nhắc “đọc to cùng bố mẹ”.
+1. Ưu tiên phát tệp giọng Elio trong `audio/` (ví dụ `audio/t01-p03.mp3`, `audio/t01-thong-diep.mp3`): truyền `tep` và `chu`.
+2. Chưa có tệp đó thì bộ mẫu đọc `chu` bằng giọng tiếng Việt có sẵn trên máy. Máy không có giọng tiếng Việt thì bộ mẫu hiện hướng dẫn cài giọng. Từ vựng và câu trong trò chơi (không có tệp) chỉ truyền `chu`.
 
-Đây là **ngoại lệ tạm thời** (khác với Kho Báu, nơi đã bỏ giọng máy). Khi đã ghi âm đủ các câu trong `AM-THANH.md`, sẽ bỏ phần giọng máy cho đúng nội quy.
+Đây là **ngoại lệ tạm thời**. Khi đã ghi âm đủ các câu trong `AM-THANH.md`, sẽ bỏ phần giọng máy cho đúng nội quy.
 
 ### Cách thêm tệp ghi âm
 
@@ -82,6 +82,8 @@ Cách nút đọc to đang chạy (trong `app.js`, hàm `speak`):
 Chép một khối `T({ … })` trong file truyện, đổi `id`, rồi sửa nội dung. Trong lời truyện, viết từ cần nhớ trong ngoặc kép vuông: `[[từ]]`, và thêm nghĩa của từ đó vào `words`. Phần Điền từ và Đố từ tự lấy từ đó ra, không cần viết thêm câu hỏi.
 
 ## Tiến độ của học sinh
+
+Ghi kết quả lên cổng (từ 17-11-2026): xong một phần có sao thì gọi `TTV.ghiKetQua` với `bai` = `t01` … `t30`, `hoatDong` = `doc` | `xep` | `do` | `dien` | `th` | `sn`, `soTroChoi` = 6. Không thêm khoá localStorage mới.
 
 Ngôi sao, Sổ từ và bài suy ngẫm được lưu trên trình duyệt của từng máy (không cần đăng nhập). Đổi máy hoặc xóa dữ liệu trình duyệt thì bắt đầu lại.
 
