@@ -2,3 +2,11 @@
 0.86  Trâu thấy thế cười ngặt nghẽo, cười mãi, cười đến nỗi đập hàm vào tảng đá, gãy mất hàm răng trên.  |  Châu thấy thế, cười ngặt nghẽo, cười mãi, cười đến nỗi đập ham vào tảng đá, gãy mất hảm răng trên.
 1.00  Vì thế mà đến bây giờ, hổ có bộ lông vằn đen, còn trâu thì không có răng ở hàm trên.  |  Vì thế mà đến bây giờ, hổ có bộ lông vằn đen, còn trâu thì không có răng ở hàm trên.
 0.96  Trí khôn giúp con người làm được việc lớn hơn sức mình. Và đừng cười chê khi người khác gặp chuyện không may.  |  Chí khôn giúp con người làm được việc lớn hơn sức mình và đừng cười chê khi người khác gặp chuyện không may.
+Lô 7 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
+1.00  Sự tích dưa hấu  |  sự tích, dưa hấu
+1.00  Ngày xưa, Mai An Tiêm là con nuôi của vua Hùng. Chàng thông minh, chăm chỉ nên được vua rất yêu quý.  |  Ngày xưa, Mai An Tiêm là con nuôi của Vua Hùng, chàng thông minh, chăm chỉ nên được Vua rất yêu quý.
+0.94  Một lần, An Tiêm nói: “Của cải con có là do con tự làm ra.” Vua cho là chàng kiêu ngạo, liền đày cả nhà chàng ra một hòn đảo hoang.  |  Một lần, An tiềm nói, Của cải con có là do con tự làm ra. Vua cho là chàng kiêu ngạo, liền đây cả nhà chàng ra một hòn đảo hoang.
+0.96  Trên đảo chỉ có cát, đá và cây dại. An Tiêm không nản lòng. Chàng dựng nhà, bắt cá, tìm rau để sống qua ngày.  |  Trên đảo, chỉ có cát, đá và cây dại. An tiềm không nản lòng. Chàng dựng nhà, bắt cá, tìm rau để sống qua ngày.
+1.00  Một hôm, đàn chim bay đến, ăn một loại quả lạ rồi nhả những hạt đen nhánh xuống bãi cát.  |  Một hôm, đàn chim bay đến, ăn một loại quả lạ, rồi nhả những hạt đen nhánh xuống bãi cát.
+0.76  An Tiêm nghĩ: “Chim ăn được thì người cũng ăn được.” Chàng nhặt hạt đem gieo trồng, ngày ngày chăm tưới.  |  Àn tiềm nghĩ. Chim ăn được thì người cũng ăn được. Chàng nhạt hạt đem rêu trồng, ngày ngày chăm túi.
+0.96  Dây leo xanh tốt, ra những quả to tròn, vỏ xanh, ruột đỏ, hạt đen. Ăn vào ngọt mát. Chàng đặt tên là dưa hấu.  |  Dì leo xanh tốt, ra những quả to tròn, vỏ xanh, ruột đỏ, hạt đen, ăn vào ngọt mát, chàng đặt tên là dưa hấu.
