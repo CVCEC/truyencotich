@@ -21,3 +21,8 @@
 0.92  Chim lại đến ăn khế. Người anh may hẳn túi mười hai gang. Ra đến đảo, anh nhét vàng đầy túi, đầy cả túi áo.  |  Chim lại đến ăn khế Người anh may hẳn túi mười hai găng Gia đến đảo anh nhét vàng đầy túi, đầy cả túi áo
 0.94  Túi vàng nặng quá, chim mỏi cánh. Người anh cùng túi vàng rơi tõm xuống biển. Vàng chìm mất, anh bám được tấm ván trôi vào bờ và mới biết hối hận.  |  Túi vàng nặng quá, chìm mọi cánh. Người anh cùng túi vàng rơi tõm xuống biển. Vàng chìm mất, anh bám được tấm ván trôi vào bờ và mới biết hối hận.
 1.00  Đừng tham lam. Biết đủ, biết chia sẻ thì sẽ sống vui vẻ và được mọi người quý mến.  |  Đừng tham lam. Biết đủ, biết chia sẻ thì sẽ sống vui vẻ và được mọi người quý mến.
+Lô 6 câu – Gemini không trả tiếng: không có tiếng trả về: {"candidates": [{"finishReason": "SAFETY", "index": 0, "finishMessage": "The audio stream could not be completed. Please retry your reque
+Lô 6 câu – Gemini không trả tiếng: không có tiếng trả về: {"candidates": [{"finishReason": "SAFETY", "index": 0, "finishMessage": "The audio stream could not be completed. Please retry your reque
+0.75  Bánh chưng, bánh giầy  |  Bánh chưng, bánh dày
+0.97  Vua Hùng đã già, muốn chọn người nối ngôi. Vua nói với các con: “Ai tìm được lễ vật ý nghĩa nhất dâng lên tổ tiên, ta sẽ truyền ngôi cho người đó.”  |  Vua Hùng đã già, muốn chọn người nối ngôi. Vua nói với các con, ai tìm được lễ vật ý nghĩa nhất dâng lên tổ tiên, ta sẽ chuyển ngôi cho người đó.
+0.95  Các lang đua nhau đi tìm của ngon vật lạ, nào cá quý dưới biển, nào vàng bạc trên núi.  |  Các làng đua nhau đi tìm của ngon vật lạ. Nào cá quý dưới biển. Nào vàng bạc trên núi.
