@@ -14,3 +14,11 @@ Lô 3 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
 1.00  An Tiêm khắc tên mình lên vỏ dưa rồi thả xuống biển, mong sóng đưa dưa về đất liền.  |  An tiêm khắc tên mình lên vỏ dưa rồi thả xuống biển, mong sóng đưa dưa về đất liền.
 1.00  Vua nhận được quả dưa, hiểu ra An Tiêm nói đúng, liền cho đón cả nhà về. Từ đó, dưa hấu được trồng khắp nơi.  |  Vua nhận được quả dưa, hiểu ra An Tiêm nói đúng, liền cho đón cả nhà về. Từ đó, dưa hấu được trồng khắp nơi.
 1.00  Dù gặp khó khăn, nếu kiên trì và chăm chỉ lao động, mình sẽ tạo ra được những điều tốt đẹp.  |  Dù gặp khó khăn, nếu kiên trì và chăm chỉ lao động, mình sẽ tạo ra được những điều tốt đẹp.
+Lô 7 câu – Gemini không trả tiếng: không có tiếng trả về: {"candidates": [{"finishReason": "SAFETY", "index": 0, "finishMessage": "The audio stream could not be completed. Please retry your reque
+1.00  Sơn Tinh, Thủy Tinh  |  sơn tinh, thủy tinh
+0.87  Vua Hùng có người con gái xinh đẹp tên là Mị Nương. Vua muốn kén cho nàng một người chồng thật tài giỏi.  |  Vua Hùng có người con gái sinh đẹp tên là Mỹ Nương. Vua muốn kén cho nàng một người chồng thật tai giỏi.
+0.92  Có hai chàng trai đến cầu hôn. Một là Sơn Tinh, thần núi. Một là Thủy Tinh, thần nước. Cả hai đều tài giỏi như nhau.  |  Có hai chàng trai đến cầu hôn, một là Sơn Tinh, thần núi, một là Thùy Tinh, thần nước. Cả hai đều tai giỏi như nhau.
+0.82  Vua nói: “Sáng mai, ai mang sính lễ đến trước sẽ được cưới Mị Nương. Sính lễ gồm voi chín ngà, gà chín cựa, ngựa chín hồng mao.”  |  Vua nói, sáng mai ai mang sinh lễ đến trước sẽ được cưới mịn nương, sinh lễ gồm voi chín ngà, gà chín cựa, ngựa chín hổng mau.
+0.88  Sáng sớm, Sơn Tinh mang đủ sính lễ đến trước. Chàng rước Mị Nương về núi.  |  Sáng sớm, Sơn Tình mang đủ sinh lễ đến trước, chàng rước mị nương về núi.
+0.85  Thủy Tinh đến sau, nổi giận đùng đùng. Chàng hô mưa, gọi gió, dâng nước lên đánh Sơn Tinh. Ruộng đồng, nhà cửa ngập chìm trong nước.  |  Thủy tình đến sau, nổi dẫn đung đung, chàng hô mưa, gọi gió, dâng nước lên đánh sơn tinh, ruộng đồng, nhà cửa ngập chìm trong nước.
+0.91  Nước dâng cao bao nhiêu, Sơn Tinh lại nâng đồi núi lên cao bấy nhiêu. Hai bên đánh nhau suốt mấy tháng trời.  |  nước dâng cao bao nhiêu, sơn tinh lãnh nâng đổi núi lên cao bấy nhiêu. Hai bên đánh nhau suốt mấy tháng trời.
