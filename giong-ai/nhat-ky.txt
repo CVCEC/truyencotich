@@ -44,3 +44,10 @@ Lô 4 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
 0.95  Thắng giặc, Gióng cởi áo giáp để lại, rồi cùng ngựa sắt bay lên đỉnh núi Sóc và bay thẳng về trời.  |  Thắng giặc, giống cởi áo giáp để lại, rồi cùng ngựa sắt bay lên đỉnh núi sóc và bay thẳng về trời.
 1.00  Nhân dân nhớ ơn, gọi Gióng là Thánh Gióng và lập đền thờ. Hằng năm, làng Gióng mở hội để tưởng nhớ người anh hùng.  |  Nhân dân nhớ ơn, gọi gióng là Thánh Gióng và Lập Đền Thờ. Hằng năm, làng gióng mở hội để tưởng nhớ người anh hùng.
 1.00  Khi quê hương cần, mọi người cùng góp sức thì sẽ làm nên việc lớn. Ai cũng có thể góp một phần, dù nhỏ.  |  Khi quê Hương cần, mọi người cùng góp sức thì sẽ làm nên việc lớn. Ai cũng có thể góp một phần dù nhỏ.
+Lô 6 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
+0.80  Trí khôn của ta đây  |  Chí khôn của ta đây!
+0.93  Một bác nông dân đang cày ruộng với con trâu. Một con hổ đi qua, thấy lạ: trâu to khỏe thế mà lại để con người nhỏ bé sai bảo.  |  Một bác nông dân đang cày ruộng với con châu. Một con hổ đi qua, thấy lạ. Châu to khỏe thế mà lại để con người nhỏ bé sai bảo.
+0.83  Hổ hỏi: “Này trâu, anh to lớn thế, sao lại chịu để người sai khiến?” Trâu đáp: “Người tuy nhỏ nhưng có trí khôn.”  |  Hổ hỏi, nầy Châu, anh to lớn thế, sao lại chịu để người sai khiến? Châu đáp, người tuy nhỏ nhưng có chí khôn.
+0.94  Hổ tò mò lắm, đến gặp bác nông dân: “Trí khôn là gì? Cho ta xem với!” Bác nông dân nghĩ một lát rồi bảo: “Trí khôn tôi để ở nhà.”  |  Hổ tò mò lắm! Đến gặp bác nông dân. Chí khôn là gì? Cho ta xem với. Bác nông dân nghĩ một lát, rồi bảo Chí khôn tôi để ở nhà.
+0.93  Bác nói thêm: “Tôi về lấy, nhưng sợ anh ăn mất trâu. Để tôi trói anh vào cây đã.” Hổ muốn xem trí khôn quá nên đồng ý ngay.  |  Bác nói thêm, Tôi về lấy, nhưng sợ anh ăn mất trâu, để tôi chói anh vào cây đã. Hổ muốn xem chí khôn quá, nên đồng ý ngay.
+0.71  Bác nông dân ôm rơm chất quanh gốc cây rồi châm lửa: “Trí khôn của ta đây!”  |  Bác nồng dần ôm dơm chất quanh gốc cây, rủi châm lửa. Chí khôn của ta đây!
