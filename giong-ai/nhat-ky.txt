@@ -26,3 +26,6 @@ Lô 6 câu – Gemini không trả tiếng: không có tiếng trả về: {"can
 0.75  Bánh chưng, bánh giầy  |  Bánh chưng, bánh dày
 0.97  Vua Hùng đã già, muốn chọn người nối ngôi. Vua nói với các con: “Ai tìm được lễ vật ý nghĩa nhất dâng lên tổ tiên, ta sẽ truyền ngôi cho người đó.”  |  Vua Hùng đã già, muốn chọn người nối ngôi. Vua nói với các con, ai tìm được lễ vật ý nghĩa nhất dâng lên tổ tiên, ta sẽ chuyển ngôi cho người đó.
 0.95  Các lang đua nhau đi tìm của ngon vật lạ, nào cá quý dưới biển, nào vàng bạc trên núi.  |  Các làng đua nhau đi tìm của ngon vật lạ. Nào cá quý dưới biển. Nào vàng bạc trên núi.
+0.96  Lang Liêu là con thứ mười tám. Chàng sống giản dị, chỉ biết trồng lúa nên lo lắm: “Mình chẳng có gì quý để dâng vua cha.”  |  Lăng Liêu là con thứ mười tám Chàng sống giản dị, chỉ biết trồng lúa nên lo lắm Mình chẳng có gì quý để dâng vua cha
+0.92  Một đêm, Lang Liêu mơ thấy một vị thần nói: “Trong trời đất, không gì quý bằng hạt gạo. Con hãy lấy gạo làm bánh.”  |  Một đêm, làng liều mơ thấy một vị thần nói Trong trời đất, không gì quý bằng hạt gạo Con hãy lấy gạo làm bánh
+0.85  Lang Liêu chọn gạo nếp thật ngon, gói với đậu xanh, thịt lợn trong lá dong. Bánh vuông tượng trưng cho Đất. Chàng gọi là bánh chưng.  |  Làng liều chọn gạo nếp thật ngon, gói với đậu xanh, thịt lợn, trong lá rong. Bánh vuông tượng trưng cho đất, chàng gọi là bánh trưng.
