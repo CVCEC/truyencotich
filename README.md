@@ -81,6 +81,14 @@ Cách nút đọc to đang chạy (trong `app.js`, hàm `speak`; từ 17-11-2026
 
 Chép một khối `T({ … })` trong file truyện, đổi `id`, rồi sửa nội dung. Trong lời truyện, viết từ cần nhớ trong ngoặc kép vuông: `[[từ]]`, và thêm nghĩa của từ đó vào `words`. Phần Điền từ và Đố từ tự lấy từ đó ra, không cần viết thêm câu hỏi.
 
+## Học thử (khách chưa đăng nhập)
+
+Góc học chỉ mở trong khung của cổng https://vietclass.cvcec.org (bộ mẫu chung lo phần này). Khách chưa đăng nhập được **học thử truyện Ngày 1 “Sự tích con trâu”** (mã bài `t01`), đủ cả 8 phần. Khách vẫn xem được Trang đầu, danh sách 30 ngày, Sổ từ, phần Bố mẹ/thầy cô và Điều khoản.
+
+- Bài học thử của góc khai ở cổng, trong `chung/gioi-thieu-goc.js` (kho CVCEC/cong-truong-tieng-viet), mục `cotich.thu` (`baiThu: "t01"`).
+- `app.js` gọi `TTV.choPhepBai("tNN")` trước khi mở một truyện. Khách mở truyện khác (kể cả gõ thẳng `#t14`) thì bộ mẫu hiện màn “Bạn đã học thử xong một bài!” có nút Đăng nhập, Đăng ký.
+- Khi biết đang học thử (sự kiện `ttv-che-do`), lưới truyện ghi “Học thử” ở Ngày 1, “Đăng nhập để học” ở Ngày 2–30; nút “Truyện hôm nay” trỏ về Ngày 1. Người đã đăng nhập không thấy gì khác.
+
 ## Tiến độ của học sinh
 
 Ghi kết quả lên cổng (từ 17-11-2026): xong một phần có sao thì gọi `TTV.ghiKetQua` với `bai` = `t01` … `t30`, `hoatDong` = `doc` | `xep` | `do` | `dien` | `th` | `sn`, `soTroChoi` = 6. Không thêm khoá localStorage mới.

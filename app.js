@@ -28,7 +28,12 @@
   const starsOf = (id) => STAR.filter((k) => S.prog[id] && S.prog[id][k]).length;
   const isDone = (id) => starsOf(id) === STAR.length;
   const totalStars = () => ALL.reduce((a, t) => a + starsOf(t.id), 0);
-  const todayStory = () => ALL.find((t) => !isDone(t.id)) || ALL[ALL.length - 1];
+  /* ── học thử (khách chưa đăng nhập): cổng báo chế độ qua bộ mẫu chung; bài thử là Ngày 1 (mã "t01") ── */
+  const BAI_THU = 1;
+  const laHocThu = () => !!(window.TTV && window.TTV.cheDoHoc && window.TTV.cheDoHoc() === 'thu');
+  // Trả false khi khách mở truyện khác bài thử: bộ mẫu tự hiện màn "Bạn đã học thử xong một bài!"
+  const choPhep = (id) => !(window.TTV && window.TTV.choPhepBai) || window.TTV.choPhepBai('t' + pad(id));
+  const todayStory = () => (laHocThu() ? byId[BAI_THU] : null) || ALL.find((t) => !isDone(t.id)) || ALL[ALL.length - 1];
   function award(t, k) {
     const p = (S.prog[t.id] = S.prog[t.id] || {});
     if (p[k]) return false;
@@ -183,7 +188,7 @@
     return `<a class="story-card${t.id === td.id ? ' today' : ''}" href="#t${pad(t.id)}">
       <div class="pic">${ART.scene(t.cover, castOf(t))}</div>
       <span class="day-badge">${t.id === td.id ? 'Hôm nay · ' : ''}Ngày ${t.id}</span>${isDone(t.id) ? '<span class="done-badge">Đã xong</span>' : ''}
-      <div class="body"><h3>${esc(t.title)}</h3><div class="meta">${genreTag(t)}${starRow(starsOf(t.id))}</div></div></a>`;
+      <div class="body"><h3>${esc(t.title)}</h3><div class="meta">${genreTag(t)}${starRow(starsOf(t.id))}</div>${laHocThu() ? (t.id === BAI_THU ? '<span class="tag thu">Học thử</span>' : '<span class="tag khoa">Đăng nhập để học</span>') : ''}</div></a>`;
   }
 
   /* ════════ SỔ TỪ ════════ */
@@ -570,7 +575,7 @@
     if (m && byId[+m[1]]) document.body.setAttribute('data-ttv-nen', 'don-gian'); else document.body.removeAttribute('data-ttv-nen');
     document.querySelectorAll('.nav a').forEach((a) => a.removeAttribute('aria-current'));
     const mark = (r) => { const a = document.querySelector(`.nav a[data-r="${r}"]`); if (a) a.setAttribute('aria-current', 'page'); };
-    if (m && byId[+m[1]]) { mark('ba-muoi-ngay'); viewStory(byId[+m[1]], m[2] || 'nv'); window.scrollTo(0, 0); return; }
+    if (m && byId[+m[1]]) { mark('ba-muoi-ngay'); if (!choPhep(+m[1])) return; viewStory(byId[+m[1]], m[2] || 'nv'); window.scrollTo(0, 0); return; }
     cur = null;
     if (h === 'so-tu') { mark('so-tu'); viewNotebook(); }
     else if (h === 'huong-dan') { mark('huong-dan'); viewGuide(); }
@@ -580,6 +585,12 @@
     window.scrollTo(0, 0);
   }
   window.addEventListener('hashchange', route);
+  // Cổng trả lời chế độ học sau khi trang đã vẽ: kiểm tra lại truyện đang mở, vẽ lại danh sách (nhãn học thử)
+  document.addEventListener('ttv-che-do', () => {
+    const m = location.hash.replace('#', '').match(/^t(\d{2})(?:-([a-z]+))?$/);
+    if (m && byId[+m[1]]) choPhep(+m[1]);
+    else route();
+  });
   updateTop();
   route();
 })();

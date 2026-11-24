@@ -85,6 +85,10 @@ body.show-en span.en { display: inline; }
 .tag.tt { background: var(--g-tt-bg); color: var(--g-tt); }
 .tag.nn { background: var(--g-nn-bg); color: var(--g-nn); }
 .tag.day { background: var(--ink); color: var(--card); }
+/* học thử (khách chưa đăng nhập) */
+.tag.thu, .tag.khoa { justify-self: start; }
+.tag.thu { background: var(--ttv-goc-dam); color: #fff; }
+.tag.khoa { background: var(--ttv-goc-nhat); color: var(--ttv-chu); }
 
 /* ── Trâu Con nói ── */
 .trau-say { display: flex; align-items: flex-end; gap: 10px; }
