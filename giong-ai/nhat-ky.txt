@@ -1,3 +1,9 @@
 1.00  Thế là vị thần hóa thành một con trâu to khỏe. Trâu xuống trần gian, ngày ngày gặm cỏ.  |  Thế là vị thần hóa thành một con trâu to khỏe, trâu xuống Trần Gian ngày ngày gặm cỏ.
 0.83  Từ đó, trâu vừa ăn cỏ vừa giúp bác nông dân cày ruộng. Ai cũng quý trâu vì trâu hiền lành và chăm chỉ.  |  Từ đó, châu vừa ăn cỏ, vừa giúp bác nông dân cầy ruộng, ai cũng quý châu vì châu hiền lành và chăm chỉ.
 1.00  Làm việc gì cũng cần cẩn thận và nghe kỹ lời dặn. Khi lỡ mắc lỗi, mình hãy chăm chỉ sửa lỗi.  |  Làm việc gì cũng cần cẩn thận và nghe kỹ lời dặn. Khi lỡ mắc lỗi, mình hãy chăm chỉ sửa lỗi.
+0.50  Cây tre trăm đốt  |  cây che chăm đốt
+0.97  Ngày xưa, có anh Khoai nghèo đi làm thuê cho nhà phú ông. Phú ông hứa: “Con chịu khó làm cho ta ba năm, ta sẽ gả con gái cho.”  |  Ngày xưa, có anh khoai nghèo đi làm thuê cho nhà phú ông. Phú ông hứa, còn chịu khó làm cho ta ba năm, ta sẽ gả con gái cho.
+0.95  Anh Khoai làm việc từ sáng sớm đến tối mịt. Nhờ anh, nhà phú ông càng ngày càng giàu.  |  Anh khoai làm việc từ sáng sớm đến tối mịt. Nhờ anh, nhà phú ông càng ngay càng giàu.
+0.96  Hết ba năm, phú ông lật lọng. Lão bảo: “Con vào rừng tìm cho ta một cây tre trăm đốt thì ta mới gả con gái.”  |  Hết ba năm, phú ông lật lọng. Lão bảo, con vào rừng tìm cho ta một cây tre chăm đốt thì ta mới gả con gái.
+0.93  Anh Khoai vào rừng tìm mãi mà không có cây tre nào đủ trăm đốt. Anh ngồi khóc. Bỗng ông Bụt hiện lên hỏi: “Vì sao con khóc?”  |  Anh khoai vào rừng tìm mãi, mà không có cây che nào đủ chăm đốt. Anh ngồi khóc. Bỗng ông Bụt hiện lên hỏi, Vì sao con khóc?
+0.84  Bụt bảo anh chặt đủ một trăm đốt tre rồi đọc: “Khắc nhập, khắc nhập!” Lạ thay, các đốt tre liền nhau thành cây tre trăm đốt.  |  Bụt bảo anh chặt đủ 100 đốt che rùi, đọc Khắc nhập, khắc nhập Lạ thay, các đốt che liền nhau thành cây che 100 đốt
