@@ -22,3 +22,7 @@ Lô 7 câu – Gemini không trả tiếng: không có tiếng trả về: {"can
 0.88  Sáng sớm, Sơn Tinh mang đủ sính lễ đến trước. Chàng rước Mị Nương về núi.  |  Sáng sớm, Sơn Tình mang đủ sinh lễ đến trước, chàng rước mị nương về núi.
 0.85  Thủy Tinh đến sau, nổi giận đùng đùng. Chàng hô mưa, gọi gió, dâng nước lên đánh Sơn Tinh. Ruộng đồng, nhà cửa ngập chìm trong nước.  |  Thủy tình đến sau, nổi dẫn đung đung, chàng hô mưa, gọi gió, dâng nước lên đánh sơn tinh, ruộng đồng, nhà cửa ngập chìm trong nước.
 0.91  Nước dâng cao bao nhiêu, Sơn Tinh lại nâng đồi núi lên cao bấy nhiêu. Hai bên đánh nhau suốt mấy tháng trời.  |  nước dâng cao bao nhiêu, sơn tinh lãnh nâng đổi núi lên cao bấy nhiêu. Hai bên đánh nhau suốt mấy tháng trời.
+Lô 3 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
+1.00  Cuối cùng, Thủy Tinh mệt mỏi, đành rút nước về. Sơn Tinh vẫn vững vàng trên núi.  |  Cuối cùng, Thủy Tinh mệt mỏi, đành rút nước về. Sơn Tinh vẫn vững vàng trên núi.
+0.89  Nhưng Thủy Tinh vẫn chưa nguôi giận. Năm nào cũng vậy, Thủy Tinh lại dâng nước đánh Sơn Tinh. Vì thế, hằng năm có mùa mưa lũ.  |  Nhưng Thủy Tình vẫn chưa nguôi giận. Năm nào cũng vậy, Thủy Tình lại dâng nước đánh sơn tinh. Vì thế, hàng năm có mùa mưa lũ.
+0.94  Người xưa dùng câu chuyện để giải thích mùa mưa lũ. Truyện khen ngợi sự kiên cường trước thiên tai, và nhắc chúng mình: thua thì đừng nổi giận làm hại người khác.  |  Người xưa dùng câu chuyện để giải thích mùa mưa lũ. Chuyện khen ngợi sự kiên cường trước thiên tai, và nhắc chúng mình, thua thì đừng nổi dẫn làm hại người khác.
