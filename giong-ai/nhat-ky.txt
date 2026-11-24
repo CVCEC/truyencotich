@@ -10,3 +10,7 @@ Lô 7 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
 1.00  Một hôm, đàn chim bay đến, ăn một loại quả lạ rồi nhả những hạt đen nhánh xuống bãi cát.  |  Một hôm, đàn chim bay đến, ăn một loại quả lạ, rồi nhả những hạt đen nhánh xuống bãi cát.
 0.76  An Tiêm nghĩ: “Chim ăn được thì người cũng ăn được.” Chàng nhặt hạt đem gieo trồng, ngày ngày chăm tưới.  |  Àn tiềm nghĩ. Chim ăn được thì người cũng ăn được. Chàng nhạt hạt đem rêu trồng, ngày ngày chăm túi.
 0.96  Dây leo xanh tốt, ra những quả to tròn, vỏ xanh, ruột đỏ, hạt đen. Ăn vào ngọt mát. Chàng đặt tên là dưa hấu.  |  Dì leo xanh tốt, ra những quả to tròn, vỏ xanh, ruột đỏ, hạt đen, ăn vào ngọt mát, chàng đặt tên là dưa hấu.
+Lô 3 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
+1.00  An Tiêm khắc tên mình lên vỏ dưa rồi thả xuống biển, mong sóng đưa dưa về đất liền.  |  An tiêm khắc tên mình lên vỏ dưa rồi thả xuống biển, mong sóng đưa dưa về đất liền.
+1.00  Vua nhận được quả dưa, hiểu ra An Tiêm nói đúng, liền cho đón cả nhà về. Từ đó, dưa hấu được trồng khắp nơi.  |  Vua nhận được quả dưa, hiểu ra An Tiêm nói đúng, liền cho đón cả nhà về. Từ đó, dưa hấu được trồng khắp nơi.
+1.00  Dù gặp khó khăn, nếu kiên trì và chăm chỉ lao động, mình sẽ tạo ra được những điều tốt đẹp.  |  Dù gặp khó khăn, nếu kiên trì và chăm chỉ lao động, mình sẽ tạo ra được những điều tốt đẹp.
