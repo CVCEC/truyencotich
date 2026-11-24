@@ -18,3 +18,6 @@
 0.81  Chim đáp: “Ăn một quả, trả cục vàng, may túi ba gang, mang đi mà đựng.”  |  Chìm đáp Ăn một quà, trả cục vàng May túi ba găng Mang đi mà đựng
 0.88  Chim chở người em bay qua biển rộng, đến một hòn đảo đầy vàng bạc. Người em chỉ nhặt vừa đủ túi ba gang rồi về.  |  Chìm chờ người em bay qua biển rộng, đến một hòn đảo đầy vang bạc. Người em chỉ nhặt vừa đủ túi ba gang, rồi về.
 0.92  Người em trở nên khá giả và hay giúp đỡ hàng xóm. Người anh biết chuyện liền đòi đổi hết nhà cửa lấy cây khế.  |  Người em trở nên khá già và hay giúp đỡ hàng xóm. Người anh biết chuyện liền đòi đổi hết nhà cửa lấy cây khí.
+0.92  Chim lại đến ăn khế. Người anh may hẳn túi mười hai gang. Ra đến đảo, anh nhét vàng đầy túi, đầy cả túi áo.  |  Chim lại đến ăn khế Người anh may hẳn túi mười hai găng Gia đến đảo anh nhét vàng đầy túi, đầy cả túi áo
+0.94  Túi vàng nặng quá, chim mỏi cánh. Người anh cùng túi vàng rơi tõm xuống biển. Vàng chìm mất, anh bám được tấm ván trôi vào bờ và mới biết hối hận.  |  Túi vàng nặng quá, chìm mọi cánh. Người anh cùng túi vàng rơi tõm xuống biển. Vàng chìm mất, anh bám được tấm ván trôi vào bờ và mới biết hối hận.
+1.00  Đừng tham lam. Biết đủ, biết chia sẻ thì sẽ sống vui vẻ và được mọi người quý mến.  |  Đừng tham lam. Biết đủ, biết chia sẻ thì sẽ sống vui vẻ và được mọi người quý mến.
