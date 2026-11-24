@@ -11,3 +11,10 @@
 0.90  Về đến nhà, anh đọc “khắc nhập”, cây tre lại liền như cũ. Phú ông tò mò chạm vào thì bị dính chặt vào cây tre, gỡ mãi không ra.  |  Về đến nhà, anh đọc, khắc nhập, cây chè lại liền như cũ, phú ông tò mò, chạm vào thì bị dính chặt vào cây chè, gỡ mãi không giả.
 0.97  Phú ông sợ quá, xin lỗi và hứa gả con gái cho anh. Anh Khoai đọc “khắc xuất” để thả phú ông ra. Anh Khoai thật thà được sống hạnh phúc bên vợ hiền.  |  Phú ông sợ quá, xin lỗi và hứa gả con gái cho anh. Anh khoai đọc, khắc suốt để thả phú ông ra. Anh khoai thật thà được sống hạnh phúc bên vợ hiền.
 1.00  Đã hứa thì phải giữ lời. Người thật thà, chăm chỉ sẽ được giúp đỡ, còn người tham lam, lật lọng sẽ phải xấu hổ.  |  Đã hứa thì phải giữ lời, người thật thà, chăm chỉ sẽ được giúp đỡ, còn người tham lam, lật lọng sẽ phải xấu hổ.
+0.00  Cây khế  |  Gây hảy?
+1.00  Ngày xưa có hai anh em. Cha mẹ mất đi, người anh tham lam lấy hết nhà cửa, ruộng vườn. Người em chỉ được chia một cây khế.  |  Ngày xưa, có hai anh em Cha mẹ mất đi, người anh tham lam lấy hết nhà cửa, ruộng vườn Người em chỉ được chia một cây khế
+0.95  Người em ngày ngày chăm sóc cây khế. Đến mùa, cây khế sai trĩu quả, quả nào cũng to và ngọt.  |  Người em ngày ngày chăm sóc cây khế, đến mùa, cây khế sai chịu quả, quả nào cũng to và ngọt.
+0.96  Một hôm có con chim lạ bay đến ăn khế. Người em buồn rầu nói: “Chim ơi, chim ăn hết khế thì nhà tôi lấy gì mà sống?”  |  Một hôm, có con chim lạ bay đến ăn khế. Người em buồn dầu nói Chim ơi, chim ăn hết khế thì nhà tôi lấy gì mà sống?
+0.81  Chim đáp: “Ăn một quả, trả cục vàng, may túi ba gang, mang đi mà đựng.”  |  Chìm đáp Ăn một quà, trả cục vàng May túi ba găng Mang đi mà đựng
+0.88  Chim chở người em bay qua biển rộng, đến một hòn đảo đầy vàng bạc. Người em chỉ nhặt vừa đủ túi ba gang rồi về.  |  Chìm chờ người em bay qua biển rộng, đến một hòn đảo đầy vang bạc. Người em chỉ nhặt vừa đủ túi ba gang, rồi về.
+0.92  Người em trở nên khá giả và hay giúp đỡ hàng xóm. Người anh biết chuyện liền đòi đổi hết nhà cửa lấy cây khế.  |  Người em trở nên khá già và hay giúp đỡ hàng xóm. Người anh biết chuyện liền đòi đổi hết nhà cửa lấy cây khí.
