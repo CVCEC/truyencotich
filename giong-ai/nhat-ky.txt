@@ -122,3 +122,12 @@ Lô 9 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
 0.91  Từ đó, hạt lúa bé nhỏ, không tự lăn về nữa. Người nông dân phải cấy, phải gặt, phải phơi rất vất vả.  |  Từ đó hạt lúa bé nhỏ không tự lanh về nữa, người nông dân phải cấy, phải gặn, phải phơi rất vất vả.
 0.95  Vì vậy, mỗi hạt cơm đều rất quý. Chúng mình phải biết trân trọng, ăn hết phần cơm của mình.  |  Vì vậy, mỗi hạt cơm đều rất quý. Chúng mình phải biết chân trọng, ăn hết phần cơm của mình.
 1.00  Hãy chăm chỉ, gọn gàng và biết quý trọng hạt gạo, quý công sức của người nông dân.  |  Hãy chăm chỉ, gọn gàng và biết quý trọng hạt gạo, quý công sức của người nông dân.
+Lô 8 câu – Gemini không trả tiếng: không có tiếng trả về: {"candidates": [{"finishReason": "SAFETY", "index": 0, "finishMessage": "The audio stream could not be completed. Please retry your reque
+0.50  Tích Chu  |  tích chú
+1.00  Ngày xưa có cậu bé Tích Chu mồ côi cha mẹ, sống với bà. Bà rất thương Tích Chu, có gì ngon cũng để dành cho cháu.  |  Ngày xưa, có cậu bé Tích Chu mồ côi cha mẹ, sống với bà. Bà rất thương Tích Chu, có gì ngon cũng để dành cho cháu.
+1.00  Lớn lên, Tích Chu mải chơi với bạn bè, chẳng quan tâm đến bà nữa.  |  Lớn lên, tích chu mải chơi với bạn bè, chẳng quan tâm đến bà nữa.
+0.95  Một hôm, bà bị ốm, khát nước quá. Bà gọi mãi, gọi mãi mà Tích Chu vẫn mải chơi ngoài đồng.  |  Một hôm, bà bị ốm, khát nước quá, bà gọi mãi, gọi mãi mà tích chu vẫn mãi chơi ngoài đồng.
+1.00  Bà khát quá, hóa thành một con chim, bay ra khỏi nhà, bay đi rất xa.  |  Bà khát quá, hóa thành một con chim bay ra khỏi nhà, bay đi rất xa.
+0.93  Tích Chu về nhà, không thấy bà đâu, chỉ thấy một con chim bay đi. Cậu òa khóc: “Bà ơi, cháu sai rồi! Bà về với cháu đi!”  |  Tích chú về nhà, không thấy bà đâu, chỉ thấy một con chim bay đi, cậu hoà khóc, bà ơi, cháu sai rồi, bà về với cháu đi.
+1.00  Một bà tiên hiện ra, bảo: “Muốn bà trở lại, cháu phải đi lấy nước suối tiên ở nơi rất xa cho bà uống.”  |  Một bà tiên hiện ra bảo, muốn bà trở lại, cháu phải đi lấy nước suối tiên ở nơi rất xa cho bà uống.
+0.94  Tích Chu vượt qua bao nhiêu núi cao, rừng sâu, cuối cùng cũng lấy được nước suối tiên.  |  Tích Chù vượt qua bao nhiêu núi cao, rừng sâu, cuối cùng cũng lấy được nước suối tiên.
