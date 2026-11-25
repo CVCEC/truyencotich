@@ -38,3 +38,6 @@ Lô 7 câu không cắt được, chia đôi để đọc lại
 0.92  Cuội dặn vợ: “Nàng nhớ chỉ tưới cây bằng nước sạch. Nếu tưới nước bẩn, cây sẽ bay lên trời đấy!”  |  Nàng nhớ chỉ tưới cây bằng nước sạch. Nếu tưới nước bẩn, cây sẽ bay lên trời đấy!
 0.85  Một hôm, vợ Cuội quên mất lời dặn, đổ nước bẩn vào gốc cây. Cây đa bỗng rung rinh, bật gốc rồi từ từ bay lên.  |  Một hôm vợ quậy quên mất lời dặn, đổ nước bẩn vào gốc cây, cây đà bỗng dung dinh, bật gốc rồi từ từ bay lên.
 0.95  Cuội về vừa kịp, nhảy lên túm lấy rễ cây, cố kéo xuống. Nhưng cây cứ bay lên, bay lên mãi.  |  Cụi về vừa kịp, nhảy lên túm lấy rễ cây, cố kéo xuống. Nhưng cây cứ bay lên, bay lên mãi.
+1.00  Cây đa bay lên tận cung trăng, mang theo cả chú Cuội. Từ đó, chú Cuội ngồi dưới gốc đa trên Mặt Trăng.  |  Cây đa bay lên tận cung trăng, mang theo cả chú cuội. Từ đó, chú cuội ngồi dưới gốc đa trên mặt trăng.
+1.00  Mỗi dịp Tết Trung thu, các bạn nhỏ rước đèn, ngắm trăng. Nhìn lên Mặt Trăng, ai cũng thấy bóng cây đa và chú Cuội.  |  Mỗi dịp Tết trung thu, các bạn nhỏ rước đèn, ngắm trăng. Nhìn lên mặt trăng, ai cũng thấy bóng cây đa và chú cuội.
+1.00  Hãy nhớ và làm theo lời dặn của người thân. Giúp đỡ người ốm đau là việc làm rất đáng quý.  |  Hãy nhớ và làm theo lời dặn của người thân. Giúp đỡ người ốm đau là việc làm rất đáng quý.
