@@ -41,3 +41,10 @@ Lô 7 câu không cắt được, chia đôi để đọc lại
 1.00  Cây đa bay lên tận cung trăng, mang theo cả chú Cuội. Từ đó, chú Cuội ngồi dưới gốc đa trên Mặt Trăng.  |  Cây đa bay lên tận cung trăng, mang theo cả chú cuội. Từ đó, chú cuội ngồi dưới gốc đa trên mặt trăng.
 1.00  Mỗi dịp Tết Trung thu, các bạn nhỏ rước đèn, ngắm trăng. Nhìn lên Mặt Trăng, ai cũng thấy bóng cây đa và chú Cuội.  |  Mỗi dịp Tết trung thu, các bạn nhỏ rước đèn, ngắm trăng. Nhìn lên mặt trăng, ai cũng thấy bóng cây đa và chú cuội.
 1.00  Hãy nhớ và làm theo lời dặn của người thân. Giúp đỡ người ốm đau là việc làm rất đáng quý.  |  Hãy nhớ và làm theo lời dặn của người thân. Giúp đỡ người ốm đau là việc làm rất đáng quý.
+0.67  Cóc kiện Trời  |  Cốc Kiện Trời
+1.00  Có một năm, trời hạn hán rất lâu. Ruộng đồng nứt nẻ, cây cỏ héo khô, muôn loài khát nước.  |  Có một năm, trời hạn hán rất lâu, ruộng đồng nứt nẻ, cây cỏ héo khô, muôn loài khát nước.
+0.95  Cóc quyết định lên thiên đình kiện Trời. Dọc đường, Cua, Gấu, Cọp, Ong và Cáo xin đi cùng.  |  Cóc quyết định lên thiên đỉnh kiện trời. Dọc đường cua, gấu, cọp, ong và cáo xin đi cùng.
+0.77  Đến cửa nhà Trời, Cóc bảo Cua nấp trong chum nước, Ong nấp sau cánh cửa, Cáo, Gấu, Cọp nấp hai bên. Rồi Cóc đánh ba hồi trống thật to.  |  Đến cửa nhà trời, cốc bảo cua nắp trong chung nước, ông nắp sau cánh cửa, cáo, gấu, cọp nắp 2 bên, rồi cốc đánh 3 hồi trống thật to.
+0.84  Trời sai Gà ra mổ Cóc, Cáo nhảy ra đuổi Gà. Trời sai Chó ra, Gấu chặn Chó lại.  |  Trời say gà ra mổ cốc, cáo nhảy ra đuổi gà, trời say chó ra, gấu chặn chó lại.
+0.83  Trời sai Thần Sét ra. Ong bay ra đốt, Thần Sét nhảy vào chum nước thì bị Cua kẹp, vừa chạy ra lại gặp Cọp. Thần Sét đành chịu thua.  |  Trời sai thần xét ra, ông bay ra đốt, thần xét nhảy vào chung nước thì bị cua kẹp, vừa chạy ra lại gặp cọp, thần xét đành chịu thua.
+0.96  Trời phải mời Cóc vào hỏi chuyện. Cóc thưa: “Đã lâu trời không mưa, muôn loài khổ lắm. Xin Trời làm mưa ngay cho.”  |  Trời phải mời Cóc vào hỏi chuyện. Cóc thừa. Đã lâu trời không mưa. Muôn loài khổ lắm. Xin trời làm mưa ngay cho.
