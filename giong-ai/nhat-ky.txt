@@ -20,3 +20,10 @@
 0.82  Ông nào cũng cho là mình đúng, không ai chịu nghe ai. Năm ông cãi nhau ầm ĩ cả một góc chợ.  |  Ông nào cũng cho là mình đúng, không ai chịu nghe ai. Nằm ông cãi nhau ẩm ý cả một góc trợ.
 1.00  Người quản voi cười bảo: “Các ông ai cũng chỉ sờ một phần. Muốn biết con voi, phải xem toàn bộ cả con!”  |  Người quản voi cười bảo Các ông ai cũng chỉ sờ một phần Muốn biết con voi, phải xem toàn bộ cả con
 1.00  Muốn hiểu đúng một việc, phải xem xét toàn bộ, đừng chỉ nhìn một phần. Hãy lắng nghe ý kiến của người khác.  |  Muốn hiểu đúng một việc, phải xem xét toàn bộ, đừng chỉ nhìn một phần. Hãy lắng nghe ý kiến của người khác.
+0.50  Ếch ngồi đáy giếng  |  Ít ngồi đáy diễn
+0.92  Có một con ếch sống lâu ngày trong một cái giếng. Xung quanh ếch chỉ có vài con nhái, con cua, con ốc bé nhỏ.  |  Có một con ếch sống lâu ngày trong một cái diếng. Sung quanh ếch chỉ có vài con nhái, con cua, con ốc bé nhỏ.
+0.88  Hằng ngày ếch cất tiếng kêu “ồm ộp” làm vang động cả giếng. Các con vật kia sợ lắm. Ếch tưởng mình là chúa tể.  |  Hằng ngày, ếch cất tiếng kêu ồm ộp, làm vang động cả diếng. Các con vật kia sợ lắm. Ấch tưởng mình là chúa tệ.
+0.82  Ếch nhìn lên miệng giếng, thấy bầu trời tròn tròn, bé tí. Ếch nghĩ: “Bầu trời chỉ to bằng cái vung thôi.”  |  Ích nhìn lên miệng diếng, thấy bầu trời tròn tròn, mé tí. Ích nghĩ, bầu trời chỉ to bằng cái vung thôi.
+0.84  Một năm, trời mưa to. Nước trong giếng dềnh lên, tràn ra ngoài, đưa ếch lên khỏi miệng giếng.  |  Một năm, trời mưa to, nước trong diếng dành lên, tràn ra ngoài, đưa ếch lên khỏi miệng diếng.
+0.91  Ra ngoài, ếch vẫn quen thói cũ. Ếch đi lại nghênh ngang, mắt nhìn lên trời, chẳng thèm để ý đến xung quanh.  |  Gia ngoài, ếch vẫn quen thói cũ, ếch đi lại ngênh ngang, mắt nhìn lên trời, chẳng thèm để ý đến xung quanh.
+0.77  Một chú trâu đi qua. Ếch không chịu tránh. May mà chú trâu dừng chân kịp, ếch suýt nữa bị giẫm bẹp. Ếch sợ hết hồn!  |  Một chú châu đi qua, Ấy không chịu tránh. May mà chú châu dừng chân kịp, Ấy suýt nữa bị dẫm bẹp. Ấy sợ hết hồn.
