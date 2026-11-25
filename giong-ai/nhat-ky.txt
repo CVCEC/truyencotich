@@ -56,3 +56,6 @@ Lô 6 câu không cắt được, chia đôi để đọc lại
 0.75  Sự tích Hồ Gươm  |  Sự tích hồ hương
 1.00  Ngày xưa, giặc Minh đô hộ nước ta, dân chúng khổ cực. Ở Lam Sơn, Lê Lợi dựng cờ khởi nghĩa, nhưng lúc đầu nghĩa quân còn yếu.  |  Ngày xưa, giặc minh đô hộ nước ta, dân chúng khổ cực. Ở Lam Sơn, Lê Lợi dựng cờ khởi nghĩa, nhưng lúc đầu nghĩa quân còn yếu.
 0.95  Thấy vậy, Đức Long Quân dưới thủy cung quyết định cho nghĩa quân mượn thanh gươm thần để đánh giặc.  |  Thấy vậy, Đức Long Quân dưới Thủy Cung quyết định cho nghĩa quân mượn thanh gơm thần để đánh giặc.
+0.90  Ở vùng biển, người đánh cá Lê Thận ba lần kéo lưới đều được cùng một thanh sắt. Nhìn kỹ, đó là một lưỡi gươm có hai chữ “Thuận Thiên”.  |  Ở vùng biển, người đánh cá lê thận, ba lần kéo lưới, đều được cùng một thanh sắt. Nhìn kỹ, đó là một lưới gương có hai chữ thuật thiên.
+1.00  Lê Thận vào nghĩa quân. Một hôm Lê Lợi đến nhà Lê Thận, thấy lưỡi gươm trong góc nhà bỗng sáng rực lên.  |  Lê Thận vào nghĩa quân. Một hôm Lê Lợi đến nhà Lê Thận, thấy lưỡi gươm trong góc nhà bỗng sáng rực lên.
+0.93  Ít lâu sau, Lê Lợi đi qua khu rừng, thấy ánh sáng trên ngọn cây đa. Đó là một chuôi gươm nạm ngọc. Tra vào lưỡi gươm, vừa như in.  |  Ít lâu sau lề lợi đi qua khu rừng, thấy ánh sáng trên ngọn cây đa, đó là một chuôi gươm nạm ngọc, tra vào lưỡi gươm vừa như im.
