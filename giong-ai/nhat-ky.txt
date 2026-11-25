@@ -9,3 +9,5 @@
 1.00  Bụt mang lên một lưỡi rìu bằng vàng sáng lóa: “Có phải rìu của con không?” Chàng lắc đầu: “Không phải của con ạ.”  |  Bụt mang lên một lưỡi rìu bằng vàng sáng lóa, có phải rìu của con không? Chàng lắc đầu, không phải của con ạ!
 1.00  Bụt lại lặn xuống, mang lên một lưỡi rìu bằng bạc. Chàng vẫn lắc đầu: “Cũng không phải của con ạ.”  |  Bụt lại lặn xuống, mang lên một lưỡi rìu bằng bạc, chàng vẫn lắc đầu, cũng không phải của con ạ.
 0.96  Lần thứ ba, Bụt mang lên một lưỡi rìu sắt. Chàng mừng rỡ reo lên: “Đúng rồi! Đây mới là rìu của con!”  |  Lần thứ ba, bụt mang lên một lưỡi rìu sắc. Chàng mừng rỡ reo lên. Đúng rồi, đây mới là rìu của con.
+0.89  Bụt khen: “Con thật là người thật thà!” Rồi Bụt tặng chàng cả ba lưỡi rìu làm phần thưởng.  |  Bụt khen Con thật là người thật tha Rồi bụt tặng chàng cả ba lưỡi dìu làm phần thưởng
+1.00  Thật thà là đức tính quý giá. Người thật thà luôn được mọi người tin yêu và quý trọng.  |  Thật thà là Đức tính quý giá. Người thật thà luôn được mọi người tin yêu và quý trọng.
