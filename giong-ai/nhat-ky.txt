@@ -19,3 +19,4 @@
 0.65  Ông sờ chân bảo: “Nó sừng sững như cái cột đình.” Ông sờ đuôi lại nói: “Nó tun tủn như cái chổi sể cùn.”  |  Ông sở chân bào, nó sừng sững như cái cụt đình. Ông sở đuôi lại nói, nó tuôn tụn như cái chuổi sể cụn đình.
 0.82  Ông nào cũng cho là mình đúng, không ai chịu nghe ai. Năm ông cãi nhau ầm ĩ cả một góc chợ.  |  Ông nào cũng cho là mình đúng, không ai chịu nghe ai. Nằm ông cãi nhau ẩm ý cả một góc trợ.
 1.00  Người quản voi cười bảo: “Các ông ai cũng chỉ sờ một phần. Muốn biết con voi, phải xem toàn bộ cả con!”  |  Người quản voi cười bảo Các ông ai cũng chỉ sờ một phần Muốn biết con voi, phải xem toàn bộ cả con
+1.00  Muốn hiểu đúng một việc, phải xem xét toàn bộ, đừng chỉ nhìn một phần. Hãy lắng nghe ý kiến của người khác.  |  Muốn hiểu đúng một việc, phải xem xét toàn bộ, đừng chỉ nhìn một phần. Hãy lắng nghe ý kiến của người khác.
