@@ -1,7 +1,7 @@
 # Giọng đọc AI – trạng thái (Truyện cổ tích)
 
-- Lần chạy gần nhất: 2026-11-25 08:46 UTC
+- Lần chạy gần nhất: 2026-11-25 08:47 UTC
 - Mô hình: gemini-3.1-flash-tts-preview · giọng Kore · miền Bắc
-- Đã có tiếng: **189 / 290** câu (lần này thêm 80, dùng 21 lượt gọi)
-- Câu Whisper nghe hơi khác chữ (cần nghe kỹ, xem kiem-tra.tsv): 12
+- Đã có tiếng: **195 / 290** câu (lần này thêm 86, dùng 22 lượt gọi)
+- Câu Whisper nghe hơi khác chữ (cần nghe kỹ, xem kiem-tra.tsv): 13
 - Câu bỏ qua theo yêu cầu (bo.txt): 0 · câu lỗi: 0
