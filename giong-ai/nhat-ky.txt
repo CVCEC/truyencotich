@@ -63,3 +63,12 @@ Lô 6 câu không cắt được, chia đôi để đọc lại
 0.93  Một năm sau, vua đi thuyền dạo chơi trên hồ Tả Vọng. Bỗng một con Rùa Vàng nổi lên: “Bệ hạ hãy hoàn gươm lại cho Long Quân!”  |  Một năm sau, vùa đi thuyền dạo chơi trên hồ tả vọng, bỗng một con rùa vàng nổi lên. Bệ hạ, hãy hoàn gương lại cho Long Quân.
 0.86  Vua trao gươm, Rùa Vàng ngậm gươm lặn xuống nước. Từ đó, hồ được gọi là Hồ Hoàn Kiếm, hay Hồ Gươm.  |  Vua trao gơm, rùa vàng ngậm gơm lặn xuống nước, từ đó hồ được gọi là hồ hoàn kiếm hay hồ gơm.
 0.95  Lòng yêu nước và sự đồng lòng của nhân dân giúp đất nước chiến thắng. Mượn của ai thì phải trả lại.  |  lỏng yêu nước và sự đồng lòng của nhân dân giúp đất nước chiến thắng, mượn của ai thì phải trả lại.
+Lô 8 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
+1.00  Sự tích cây vú sữa  |  Sự tích cây vú sữa
+0.95  Ngày xưa có một cậu bé rất ham chơi. Một lần bị mẹ mắng, cậu vùng vằng bỏ đi.  |  Ngày xưa, có một cậu bé rất ham chơi. Một lần bị mẹ mắng, cậu vùng văng bỏ đi.
+0.95  Cậu la cà khắp nơi, mãi không chịu về. Ở nhà, ngày nào mẹ cũng ra đầu ngõ ngóng con.  |  Cậu la cả khắp nơi, mãi không chịu về. Ở nhà, ngày nào mẹ cũng ra đầu ngõ, ngóng con.
+0.95  Mẹ chờ con mãi, chờ mãi. Rồi một ngày, ngay ở chỗ mẹ hay đứng chờ, mọc lên một cây xanh lạ.  |  Mẹ chờ con mãi, chờ mãi Rồi một ngày, ngay ở chỗ mẹ hay đứng chờ, mọc lên một cây xanh lạng
+0.96  Cậu bé đi mãi, vừa đói vừa rét, lại bị các bạn lớn hơn bắt nạt. Cậu nhớ mẹ quá, liền tìm đường về nhà.  |  Cậu bé đi mãi, vừa đói, vừa dét, lại bị các bạn lớn hơn bắt nạt. Cậu nhớ mẹ quá, liền tìm đường về nhà.
+1.00  Về đến nhà, cậu không thấy mẹ đâu. Cậu gọi mẹ đến khản tiếng, rồi ôm lấy cây xanh trong vườn mà khóc.  |  Về đến nhà, cậu không thấy mẹ đâu. Cậu gọi mẹ đến khản tiếng, rồi ôm lấy cây xanh trong vườn mà khóc.
+0.96  Kỳ lạ thay, cây xanh run rẩy. Những đài hoa bé tí trổ ra, nở trắng như mây. Hoa rụng, quả xuất hiện, lớn dần.  |  Kỳ lạ thay, cây xanh run dày, những đài hoa bé tí trổ ra, nở trắng như mây, hoa rụng, quả xuất hiện, lớn dần.
+0.95  Một quả rơi vào tay cậu. Cậu cắn một miếng, dòng sữa trắng ngọt thơm trào ra, như sữa của mẹ.  |  Một quả rơi vào tay cậu. Cậu cắn một miếng, dòng sữa trắng ngọt thơm chào ra như sữa của mẹ.
