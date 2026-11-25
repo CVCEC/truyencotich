@@ -54,18 +54,20 @@ Nút **EN** ở góc trên hiện lời giải thích tiếng Anh ngắn ở m�
 - Màn chào dùng cảnh trời – mây – ruộng (`.ttv-canh`); màn đọc truyện và màn chơi dùng nền kem trơn (`data-ttv-nen="don-gian"`).
 - Lời truyện và chữ tập đọc dùng phông Andika (`--ttv-phong-tap-doc`).
 
-## Thêm giọng đọc thật (giọng Elio)
+## Giọng đọc (giọng AI Kore của trường, hoặc bản thu giọng người thật)
+
+Từ 25-11-2026 mọi góc học dùng chung giọng Trâu Con **giọng AI Kore** (Google Gemini, miền Bắc). Robot `giong-ai/` (GitHub Actions) đọc các trang truyện trong `giong-ai/can-doc.tsv` và lưu vào `audio/` (tiến độ: `giong-ai/trang-thai.md`; trần 15 lượt gọi/ngày trong `giong-ai/chay.txt`). Muốn thay bằng bản thu người thật: đặt tệp đúng tên đè lên tệp AI; robot không ghi đè tệp đã có.
 
 ### Ngoại lệ tạm thời: vẫn giữ giọng máy (speechSynthesis)
 
 Nội quy chung (`CLAUDE.md`, quy tắc 7) yêu cầu chỉ dùng tệp giọng chuẩn của trường, không dùng giọng máy của thiết bị. Riêng trang này **tạm thời** vẫn giữ giọng máy làm phương án dự phòng, vì:
 
 - Đọc to là phần chính của truyện: các bạn nhỏ đang tập đọc cần nghe lời truyện. Bỏ giọng máy khi chưa có đủ tệp ghi âm thì nút “Nghe đọc” sẽ không đọc được gì.
-- Hiện thư mục `audio/` chưa có tệp ghi âm nào (30 truyện cần hơn 300 tệp).
+- Robot đang tạo dần 290 tệp trong `audio/`; trang nào chưa có tệp thì vẫn cần giọng máy.
 
 Cách nút đọc to đang chạy (trong `app.js`, hàm `speak`; từ 17-11-2026 đi qua bộ mẫu `TTV.phat({ tep, chu })`, trang không gọi speechSynthesis trực tiếp):
 
-1. Ưu tiên phát tệp giọng Elio trong `audio/` (ví dụ `audio/t01-p03.mp3`, `audio/t01-thong-diep.mp3`): truyền `tep` và `chu`.
+1. Ưu tiên phát tệp giọng trong `audio/` (ví dụ `audio/t01-p03.mp3`, `audio/t01-thong-diep.mp3`): truyền `tep` và `chu`.
 2. Chưa có tệp đó thì bộ mẫu đọc `chu` bằng giọng tiếng Việt có sẵn trên máy. Máy không có giọng tiếng Việt thì bộ mẫu hiện hướng dẫn cài giọng. Từ vựng và câu trong trò chơi (không có tệp) chỉ truyền `chu`.
 
 Đây là **ngoại lệ tạm thời**. Khi đã ghi âm đủ các câu trong `AM-THANH.md`, sẽ bỏ phần giọng máy cho đúng nội quy.
