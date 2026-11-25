@@ -2,3 +2,10 @@
 1.00  Người con trưởng theo mẹ lên làm vua, lấy hiệu là Hùng Vương, đóng đô ở Phong Châu, đặt tên nước là Văn Lang.  |  Người con trưởng theo mẹ lên làm vua, lấy hiệu là Hùng Vương, đóng đô ở Phong Châu, đặt tên nước là Văn Lang.
 1.00  Vì thế, người Việt luôn tự hào là con Rồng cháu Tiên, và gọi nhau thân thương là đồng bào, nghĩa là cùng một bọc sinh ra.  |  Vì thế, người Việt luôn tự hào là con rồng cháu tiên và gọi nhau thân thương là đồng bào, nghĩa là cùng một bọc sinh ra.
 1.00  Người Việt ở khắp nơi đều chung một cội nguồn, là anh em một nhà. Chúng mình hãy yêu thương và giúp đỡ nhau.  |  Người Việt ở khắp nơi đều chung một cội nguồn là anh em một nhà. Chúng mình hãy yêu thương và giúp đỡ nhau.
+0.33  Ba lưỡi rìu  |  Ba lũi riu
+0.91  Ngày xưa có một chàng tiều phu mồ côi, nhà rất nghèo. Gia tài của chàng chỉ có một chiếc rìu sắt.  |  Ngày xưa, có một chàng tiều phu mổ côi, nhà rất nghèo. Gia tài của chàng chỉ có một chiếc rượu sắt.
+0.95  Một hôm, chàng đốn củi bên sông. Lưỡi rìu tuột tay văng xuống dòng nước sâu. Chàng hoảng hốt nhìn theo.  |  Một hôm, chàng đốn củi bên sông Lưỡi rìu tuột tay văng xuống dòng nước sâu Chàng hoàng hốt nhìn theo
+0.96  Chàng ngồi khóc: “Mất rìu rồi, mình lấy gì kiếm sống?” Ông Bụt hiện lên hỏi chuyện, rồi lặn xuống sông tìm giúp.  |  Chàng ngồi khóc, mất rượu rồi, mình lấy gì kiếm sống? Ông Bụt hiện lên hỏi chuyện, rồi lặn xuống sông tìm giúp.
+1.00  Bụt mang lên một lưỡi rìu bằng vàng sáng lóa: “Có phải rìu của con không?” Chàng lắc đầu: “Không phải của con ạ.”  |  Bụt mang lên một lưỡi rìu bằng vàng sáng lóa, có phải rìu của con không? Chàng lắc đầu, không phải của con ạ!
+1.00  Bụt lại lặn xuống, mang lên một lưỡi rìu bằng bạc. Chàng vẫn lắc đầu: “Cũng không phải của con ạ.”  |  Bụt lại lặn xuống, mang lên một lưỡi rìu bằng bạc, chàng vẫn lắc đầu, cũng không phải của con ạ.
+0.96  Lần thứ ba, Bụt mang lên một lưỡi rìu sắt. Chàng mừng rỡ reo lên: “Đúng rồi! Đây mới là rìu của con!”  |  Lần thứ ba, bụt mang lên một lưỡi rìu sắc. Chàng mừng rỡ reo lên. Đúng rồi, đây mới là rìu của con.
