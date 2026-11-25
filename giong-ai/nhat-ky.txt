@@ -27,3 +27,5 @@
 0.84  Một năm, trời mưa to. Nước trong giếng dềnh lên, tràn ra ngoài, đưa ếch lên khỏi miệng giếng.  |  Một năm, trời mưa to, nước trong diếng dành lên, tràn ra ngoài, đưa ếch lên khỏi miệng diếng.
 0.91  Ra ngoài, ếch vẫn quen thói cũ. Ếch đi lại nghênh ngang, mắt nhìn lên trời, chẳng thèm để ý đến xung quanh.  |  Gia ngoài, ếch vẫn quen thói cũ, ếch đi lại ngênh ngang, mắt nhìn lên trời, chẳng thèm để ý đến xung quanh.
 0.77  Một chú trâu đi qua. Ếch không chịu tránh. May mà chú trâu dừng chân kịp, ếch suýt nữa bị giẫm bẹp. Ếch sợ hết hồn!  |  Một chú châu đi qua, Ấy không chịu tránh. May mà chú châu dừng chân kịp, Ấy suýt nữa bị dẫm bẹp. Ấy sợ hết hồn.
+0.96  Từ hôm ấy, ếch hiểu rằng thế giới rộng lớn lắm. Mình còn nhỏ bé, còn phải học hỏi nhiều để thêm hiểu biết.  |  Từ hôm ấy, ếch hiểu rằng thế giới rộng lớn lắm. Mình còn nhỏ bé, con phải học hỏi nhiều để thêm hiểu biết.
+1.00  Thế giới rất rộng lớn. Đừng vội cho mình là giỏi nhất, hãy luôn khiêm tốn và học hỏi thêm.  |  Thế giới rất rộng lớn, đừng vội cho mình là giỏi nhất, hãy luôn khiêm tốn và học hỏi thêm.
