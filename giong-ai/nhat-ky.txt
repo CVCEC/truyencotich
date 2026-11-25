@@ -11,3 +11,11 @@
 0.96  Lần thứ ba, Bụt mang lên một lưỡi rìu sắt. Chàng mừng rỡ reo lên: “Đúng rồi! Đây mới là rìu của con!”  |  Lần thứ ba, bụt mang lên một lưỡi rìu sắc. Chàng mừng rỡ reo lên. Đúng rồi, đây mới là rìu của con.
 0.89  Bụt khen: “Con thật là người thật thà!” Rồi Bụt tặng chàng cả ba lưỡi rìu làm phần thưởng.  |  Bụt khen Con thật là người thật tha Rồi bụt tặng chàng cả ba lưỡi dìu làm phần thưởng
 1.00  Thật thà là đức tính quý giá. Người thật thà luôn được mọi người tin yêu và quý trọng.  |  Thật thà là Đức tính quý giá. Người thật thà luôn được mọi người tin yêu và quý trọng.
+0.75  Thầy bói xem voi  |  Thầy bỏi xem voi
+0.96  Có năm ông thầy bói mù ngồi nói chuyện với nhau. Các ông chưa bao giờ biết hình thù con voi ra sao.  |  Có 5 ông thầy bói mù ngồi nói chuyện với nhau. Các ông chưa bao giờ biết hình thủ con voi ra sao.
+1.00  Nghe nói có voi đi qua, các ông góp tiền nhờ người quản voi cho xem. Vì không nhìn thấy, mỗi ông sờ một bộ phận của con voi.  |  Nghe nói có voi đi qua, các ông góp tiền nhờ người quản voi cho xem. Vì không nhìn thấy, mỗi ông sờ một bộ phận của con voi.
+0.67  Ông sờ vòi nói: “Con voi sun sun như con đỉa.” Ông sờ ngà nói: “Không phải! Nó chần chẫn như cái đòn càn.”  |  Ông sờ vòi nói, con vòi xun xun như con đìa. Ông sờ ngã nói, không phải, nó trần trẫn như cái đòn can.
+0.77  Ông sờ tai cãi: “Đâu có! Nó bè bè như cái quạt thóc.”  |  Ông sở tai cãi. Đâu có. Nó bẻ bẻ như cái quạt thóc.
+0.65  Ông sờ chân bảo: “Nó sừng sững như cái cột đình.” Ông sờ đuôi lại nói: “Nó tun tủn như cái chổi sể cùn.”  |  Ông sở chân bào, nó sừng sững như cái cụt đình. Ông sở đuôi lại nói, nó tuôn tụn như cái chuổi sể cụn đình.
+0.82  Ông nào cũng cho là mình đúng, không ai chịu nghe ai. Năm ông cãi nhau ầm ĩ cả một góc chợ.  |  Ông nào cũng cho là mình đúng, không ai chịu nghe ai. Nằm ông cãi nhau ẩm ý cả một góc trợ.
+1.00  Người quản voi cười bảo: “Các ông ai cũng chỉ sờ một phần. Muốn biết con voi, phải xem toàn bộ cả con!”  |  Người quản voi cười bảo Các ông ai cũng chỉ sờ một phần Muốn biết con voi, phải xem toàn bộ cả con
