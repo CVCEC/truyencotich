@@ -81,3 +81,5 @@ Lô 8 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
 1.00  Cô bé vào rừng, tìm được bông hoa trắng. Cô đếm: chỉ có năm cánh. “Mẹ chỉ sống thêm được năm năm thôi sao?”  |  Cô bé vào rừng tìm được bông hoa trắng. Cô đếm, chỉ có 5 cánh. Mẹ chỉ sống thêm được 5 năm thôi sao?
 0.92  Cô bé nghĩ ra một cách. Cô nhẹ nhàng xé mỗi cánh hoa thành thật nhiều cánh nhỏ, nhiều đến mức không đếm xuể.  |  Cô bé nghĩ ra một cách. Cô nhẹ nhàng xé mũi cánh hoa thành thật nhiều cánh nhỏ, nhiều đến mức không đếm suỵ.
 1.00  Cô bé chạy về nhà. Mẹ đã khỏe dần lên. Ông cụ hiện ra, khen cô bé là người con hiếu thảo.  |  Cô bé chạy về nhà. Mẹ đã khỏe dần lên. Ông cụ hiện ra khen cô bé là người con hiếu thảo.
+1.00  Bông hoa ấy về sau được gọi là hoa cúc trắng. Hoa có rất nhiều cánh nhỏ, như tấm lòng thương mẹ của cô bé.  |  Bông hoa ấy về sau được gọi là hoa cúc trắng, hoa có rất nhiều cánh nhỏ như tấm lòng thương mẹ của cô bé.
+0.94  Hãy hiếu thảo, yêu thương cha mẹ. Khi gặp khó khăn, hãy bình tĩnh nghĩ cách giải quyết.  |  Hãy hiểu thảo, yêu thương cha mẹ, khi gặp khó khăn, hãy bình tĩnh, nghĩ cách giải quyết.
