@@ -29,3 +29,8 @@
 0.77  Một chú trâu đi qua. Ếch không chịu tránh. May mà chú trâu dừng chân kịp, ếch suýt nữa bị giẫm bẹp. Ếch sợ hết hồn!  |  Một chú châu đi qua, Ấy không chịu tránh. May mà chú châu dừng chân kịp, Ấy suýt nữa bị dẫm bẹp. Ấy sợ hết hồn.
 0.96  Từ hôm ấy, ếch hiểu rằng thế giới rộng lớn lắm. Mình còn nhỏ bé, còn phải học hỏi nhiều để thêm hiểu biết.  |  Từ hôm ấy, ếch hiểu rằng thế giới rộng lớn lắm. Mình còn nhỏ bé, con phải học hỏi nhiều để thêm hiểu biết.
 1.00  Thế giới rất rộng lớn. Đừng vội cho mình là giỏi nhất, hãy luôn khiêm tốn và học hỏi thêm.  |  Thế giới rất rộng lớn, đừng vội cho mình là giỏi nhất, hãy luôn khiêm tốn và học hỏi thêm.
+Lô 7 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper – không được
+Lô 7 câu không cắt được, chia đôi để đọc lại
+0.83  Sự tích chú Cuội cung trăng  |  Sự tích, chú cuội, cung chăng
+0.92  Ngày xưa, chú Cuội làm nghề đốn củi. Một hôm vào rừng, Cuội thấy một chú hổ con bị thương nằm dưới gốc cây đa.  |  Ngày xưa, chú Cụi làm nghề đốn củi. Một hôm vào rừng, Cụi thấy một chú hổ con bị thương nằm dưới gốc cây đa.
+0.96  Hổ mẹ chạy đến, hái lá cây đa nhai rồi đắp cho con. Lạ thay, hổ con khỏe lại ngay. Cuội nấp sau bụi cây, ngạc nhiên lắm.  |  Hổ mẹ chạy đến, hái lá cây đa nhai, rồi đắp cho con. Lạ thay, hổ con khỏe lại ngay. Cụi nấp sau bụi cây, ngạc nhiên lắm.
