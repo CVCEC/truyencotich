@@ -51,3 +51,8 @@ Lô 7 câu không cắt được, chia đôi để đọc lại
 0.95  Trời hứa làm mưa ngay, lại dặn: “Lần sau muốn mưa, cậu Cóc chỉ cần nghiến răng là ta cho mưa xuống.”  |  Trời hứa làm mưa ngay, lại dặn, lần sau muốn mưa, cậu Cóc chỉ cần nghiến rằng là ta cho mưa xuống.
 1.00  Cóc về đến nơi thì mưa đã xuống ào ào. Ruộng đồng lại xanh tươi. Ai cũng cảm ơn Cóc. Muôn loài đoàn kết thì việc khó mấy cũng làm được.  |  Cóc về đến nơi thì mưa đã xuống ào ào, ruộng đồng lại xanh tươi. Ai cũng cảm ơn Cóc. Muôn loài đoàn kết thì việc khó mấy cũng làm được.
 1.00  Nhỏ bé nhưng dũng cảm, biết đoàn kết và có kế hoạch thì làm được việc lớn. Hãy dám lên tiếng vì điều tốt cho mọi người.  |  Nhỏ bé nhưng dũng cảm, biết đoàn kết và có kế hoạch thì làm được việc lớn. Hãy dám lên tiếng vì điều tốt cho mọi người.
+Lô 6 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper – không được
+Lô 6 câu không cắt được, chia đôi để đọc lại
+0.75  Sự tích Hồ Gươm  |  Sự tích hồ hương
+1.00  Ngày xưa, giặc Minh đô hộ nước ta, dân chúng khổ cực. Ở Lam Sơn, Lê Lợi dựng cờ khởi nghĩa, nhưng lúc đầu nghĩa quân còn yếu.  |  Ngày xưa, giặc minh đô hộ nước ta, dân chúng khổ cực. Ở Lam Sơn, Lê Lợi dựng cờ khởi nghĩa, nhưng lúc đầu nghĩa quân còn yếu.
+0.95  Thấy vậy, Đức Long Quân dưới thủy cung quyết định cho nghĩa quân mượn thanh gươm thần để đánh giặc.  |  Thấy vậy, Đức Long Quân dưới Thủy Cung quyết định cho nghĩa quân mượn thanh gơm thần để đánh giặc.
