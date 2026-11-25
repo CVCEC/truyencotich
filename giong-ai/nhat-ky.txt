@@ -9,3 +9,4 @@ Lô 8 câu – Gemini không trả tiếng: không có tiếng trả về: {"can
 1.00  Bà lão bí mật nhẹ nhàng cất vỏ ốc đi. Nàng tiên không chui vào vỏ được nữa.  |  bà lão bí mật nhẹ nhàng cất vỏ ốc đi, nàng tiên không chui vào vỏ được nữa.
 0.89  Bà ôm lấy nàng tiên, nói: “Con hãy ở lại đây với bà.” Nàng tiên vui vẻ nhận lời.  |  Bà ôm lý nàng tiên, nói, Còn hãy ở lại đây với bà. Nàng tiên vui vẻ nhận lời.
 1.00  Từ đó, bà lão và nàng tiên Ốc sống bên nhau, yêu thương nhau như hai mẹ con.  |  Từ đó, bà Lão và nàng tiên ốc sống bên nhau, yêu thương nhau như hai mẹ con.
+1.00  Lòng tốt sẽ được đáp lại bằng lòng tốt. Tình thương giữa người với người mang lại hạnh phúc.  |  Lòng tốt sẽ được đáp lại bằng lòng tốt, tình thương giữa người với người mang lại hạnh phúc.
