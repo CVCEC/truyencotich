@@ -121,3 +121,4 @@ Lô 9 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
 0.96  Hạt lúa vỡ tan thành muôn mảnh nhỏ. Hạt lúa buồn bã nói: “Từ nay muốn có lúa ăn, các người phải ra tận đồng mà gặt.”  |  Hạt lúa vỡ tan thành muôn mảnh nhỏ. Hạt lúa buồn bã nói, Từ nay muốn có lúa ăn, các người phải ra tận đông mà gặt.
 0.91  Từ đó, hạt lúa bé nhỏ, không tự lăn về nữa. Người nông dân phải cấy, phải gặt, phải phơi rất vất vả.  |  Từ đó hạt lúa bé nhỏ không tự lanh về nữa, người nông dân phải cấy, phải gặn, phải phơi rất vất vả.
 0.95  Vì vậy, mỗi hạt cơm đều rất quý. Chúng mình phải biết trân trọng, ăn hết phần cơm của mình.  |  Vì vậy, mỗi hạt cơm đều rất quý. Chúng mình phải biết chân trọng, ăn hết phần cơm của mình.
+1.00  Hãy chăm chỉ, gọn gàng và biết quý trọng hạt gạo, quý công sức của người nông dân.  |  Hãy chăm chỉ, gọn gàng và biết quý trọng hạt gạo, quý công sức của người nông dân.
