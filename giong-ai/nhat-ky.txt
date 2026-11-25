@@ -113,3 +113,11 @@ Lô 9 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
 0.89  Mèo nói vọng xuống: “Ta chưa dạy ngươi trèo cây đâu!” Hổ xấu hổ, lủi thủi bỏ đi.  |  Mèo nói vọng xuống, ta chưa dạch ngươi trèo cây đâu. Hổ xấu hổ, lùi thủi bỏ đi.
 1.00  Vì thế mà đến bây giờ, hổ vẫn không trèo cây giỏi như mèo.  |  Vì thế mà đến bây giờ, hổ vẫn không trèo cây giỏi như mèo.
 0.90  Hãy biết ơn những người đã dạy dỗ, giúp đỡ mình. Kẻ vô ơn sẽ bị mọi người xa lánh.  |  Hãy biết ơn những người đã dạy rũ, giúp đỡ mình, kẻ vô ơn sẽ bị mọi người sa lánh.
+1.00  Sự tích cây lúa  |  Sự tích cây lúa
+1.00  Ngày xửa ngày xưa, hạt lúa to tròn như quả bóng. Đến mùa lúa chín, hạt lúa tự lăn về từng nhà.  |  Ngày xửa ngày xưa, hạt lúa to tròn như quả bóng Đến mùa lúa chín, hạt lúa tự lăn về từng nhà
+1.00  Mọi người chỉ cần quét nhà sạch sẽ, mở rộng cửa là đón được lúa vào nhà.  |  Mọi người chỉ cần quét nhà sạch sẽ, mở rộng cửa là đón được lúa vào nhà.
+0.90  Có một người phụ nữ rất lười biếng. Mùa lúa đến rồi mà nhà vẫn bừa bộn, chưa quét dọn gì.  |  Có một người phụ nữ rất lười biếng, mua lúa đến rồi mà nhà vẫn bừa bụn, chưa quét dọn gì.
+0.90  Hạt lúa lăn đến cửa. Chị ta cuống quýt quét nhà, bực mình vung chổi đập mạnh vào hạt lúa.  |  Hạt lúa lăn đến cửa, chị ta cuốn quyết quét nhà, bực mình vung chổi đập mạnh vào hạt lúa.
+0.96  Hạt lúa vỡ tan thành muôn mảnh nhỏ. Hạt lúa buồn bã nói: “Từ nay muốn có lúa ăn, các người phải ra tận đồng mà gặt.”  |  Hạt lúa vỡ tan thành muôn mảnh nhỏ. Hạt lúa buồn bã nói, Từ nay muốn có lúa ăn, các người phải ra tận đông mà gặt.
+0.91  Từ đó, hạt lúa bé nhỏ, không tự lăn về nữa. Người nông dân phải cấy, phải gặt, phải phơi rất vất vả.  |  Từ đó hạt lúa bé nhỏ không tự lanh về nữa, người nông dân phải cấy, phải gặn, phải phơi rất vất vả.
+0.95  Vì vậy, mỗi hạt cơm đều rất quý. Chúng mình phải biết trân trọng, ăn hết phần cơm của mình.  |  Vì vậy, mỗi hạt cơm đều rất quý. Chúng mình phải biết chân trọng, ăn hết phần cơm của mình.
