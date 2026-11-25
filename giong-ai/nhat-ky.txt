@@ -1,2 +1,11 @@
 0.92  Chim uống nước suối tiên rồi hóa lại thành bà. Tích Chu ôm chầm lấy bà, hứa từ nay sẽ luôn yêu thương, chăm sóc bà.  |  Chìm uống nước suối tiên, rồi hóa lại thành bà. Tích Chù ôm chầm lấy bà, hứa từ nay sẽ luôn yêu thương, chăm sóc bà.
 0.90  Hãy yêu thương và quan tâm ông bà, cha mẹ. Đừng mải chơi mà quên những người luôn thương mình.  |  Hãy yêu thương và quan tâm ông bà, cha mẹ. Đừng mãi chơi mà quen những người luôn thương mình.
+Lô 8 câu – Gemini không trả tiếng: không có tiếng trả về: {"candidates": [{"finishReason": "SAFETY", "index": 0, "finishMessage": "The audio stream could not be completed. Please retry your reque
+1.00  Nàng tiên Ốc  |  Nàng tiên ốc
+0.95  Ngày xưa có một bà lão nghèo, sống một mình. Hằng ngày, bà mò cua bắt ốc để kiếm sống.  |  Ngày xưa có một bà lão nghèo sống một mình. Hằng ngày ba mò cua bắt ốc để kiếm sống.
+0.83  Một hôm, bà bắt được một con ốc xinh xắn, vỏ biêng biếc. Bà thương, không nỡ bán, mang về thả vào chum nước.  |  Một hôm, bà bắt được một con ốc sinh sắn, vỏ biên biếc. Bà thương không nỡ bán, mang về thả vào chung nước.
+0.96  Từ hôm ấy, đi làm về, bà thấy nhà cửa sạch sẽ, cơm nước tinh tươm, vườn rau sạch cỏ. Bà lấy làm lạ lắm.  |  Từ hôm ấy, đi làm về, bà thấy nhà cửa sạch sẽ, cơm nước tinh tương, vườn rau sạch cỏ, bà lấy làm lạ lắm.
+0.92  Một hôm, bà giả vờ ra đồng rồi quay về rình xem. Bà thấy một nàng tiên bước ra từ vỏ ốc, quét dọn nhà cửa.  |  Một hôm, bà giả vờ ra đồng rồi quay về dình xem, bà thấy một nàng tiên bước ra từ vỏ ốc, quét dọa nhà cửa.
+1.00  Bà lão bí mật nhẹ nhàng cất vỏ ốc đi. Nàng tiên không chui vào vỏ được nữa.  |  bà lão bí mật nhẹ nhàng cất vỏ ốc đi, nàng tiên không chui vào vỏ được nữa.
+0.89  Bà ôm lấy nàng tiên, nói: “Con hãy ở lại đây với bà.” Nàng tiên vui vẻ nhận lời.  |  Bà ôm lý nàng tiên, nói, Còn hãy ở lại đây với bà. Nàng tiên vui vẻ nhận lời.
+1.00  Từ đó, bà lão và nàng tiên Ốc sống bên nhau, yêu thương nhau như hai mẹ con.  |  Từ đó, bà Lão và nàng tiên ốc sống bên nhau, yêu thương nhau như hai mẹ con.
