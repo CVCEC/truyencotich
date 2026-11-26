@@ -113,10 +113,16 @@
   /* ── ghi kết quả học lên cổng (bộ mẫu gửi; không tạo khoá localStorage mới). Mỗi phần có sao là một hoạt động. ── */
   let batDauPhan = Date.now();
   const saoTheoTiLe = (d, m) => { const r = m ? d / m : 0; return r >= 0.9 ? 3 : r >= 0.6 ? 2 : r > 0 ? 1 : 0; };
-  function ghiKQ(t, k, diem, toiDa) {
+  /* Kết quả từng câu (từ 26-11-2026): cau = [{ ma, tu, dung, mang, loi }], tối đa 40 câu.
+     "tu" luôn là từ/câu ĐÍCH lấy từ dữ liệu truyện, không bao giờ là chữ học sinh gõ. Bộ mẫu cũ bỏ qua trường này. */
+  const tuDich = (s) => { s = String(s || '').normalize('NFC').replace(/\s+/g, ' ').trim(); return s.length > 30 ? s.slice(0, 29).trim() + '…' : s; };
+  const doanLoi = (dapAn, chon, macDinh) => { let l = null; try { l = window.TTV && TTV.loaiLoi ? TTV.loaiLoi(dapAn, chon) : null; } catch (e) { /* bỏ qua */ } return l || macDinh; };
+  function ghiKQ(t, k, diem, toiDa, cau) {
     try {
       if (!window.TTV || !TTV.ghiKetQua) return;
-      TTV.ghiKetQua({ bai: 't' + pad(t.id), hoatDong: k, soTroChoi: STAR.length, diem, diemToiDa: toiDa, sao: saoTheoTiLe(diem, toiDa), thoiGianGiay: Math.round((Date.now() - batDauPhan) / 1000) });
+      const kq = { bai: 't' + pad(t.id), hoatDong: k, soTroChoi: STAR.length, diem, diemToiDa: toiDa, sao: saoTheoTiLe(diem, toiDa), thoiGianGiay: Math.round((Date.now() - batDauPhan) / 1000) };
+      if (cau && cau.length) kq.cau = cau.slice(0, 40);
+      TTV.ghiKetQua(kq);
     } catch (e) { /* bỏ qua */ }
   }
 
@@ -368,14 +374,17 @@
     };
     function check() {
       const wrong = st.slots.map((v, s) => (v === s ? -1 : s)).filter((s) => s >= 0);
-      if (st.lan++ === 0) st.dungLanDau = n - wrong.length; // điểm: số tranh đúng chỗ ở lần xếp đầu
+      if (st.lan++ === 0) { // điểm: số tranh đúng chỗ ở lần xếp đầu
+        st.dungLanDau = n - wrong.length;
+        st.cau = idx.map((pi, s) => { const d = st.slots[s] === s; const c = { ma: 'p' + pad(pi + 1), tu: tuDich(t.pages[pi][0]), dung: d, mang: 'doc-hieu' }; if (!d) c.loi = 'trat-tu'; return c; });
+      }
       el.querySelectorAll('.slot').forEach((sl, s) => sl.classList.add(wrong.includes(s) ? 'no' : 'ok'));
       if (!wrong.length) { sfx.ok(); setTimeout(() => retell(), 700); return; }
       sfx.bad();
       setTimeout(() => { wrong.forEach((s) => { const v = st.slots[s]; st.slots[s] = null; st.tray[st.tray.indexOf(null)] = v; }); draw(`Có ${wrong.length} tranh chưa đúng chỗ, mình đã lấy ra rồi. Các bạn thử lại nhé!`); }, 1100);
     }
     function retell() {
-      award(t, 'xep'); ghiKQ(t, 'xep', st.dungLanDau, n);
+      award(t, 'xep'); ghiKQ(t, 'xep', st.dungLanDau, n, st.cau);
       el.onclick = null;
       el.innerHTML = `${head('Bây giờ, các bạn kể lại nhé!', 'Now retell the story using the pictures.')}
         ${trau('cheer', 'Đúng hết rồi! Bây giờ các bạn nhìn tranh và kể lại câu chuyện bằng lời của mình cho bố mẹ hoặc bạn bè nghe nhé. Quên thì chạm vào tranh để xem gợi ý!', 'All correct! Look at the pictures and tell the story in your own words. Tap a picture for a hint.')}
@@ -388,8 +397,9 @@
   function runQuiz(el, rounds, o) {
     batDauPhan = Date.now();
     let r = 0, first = 0, tried = false;
+    const cau = []; // kết quả lần chọn đầu của từng câu
     function draw() {
-      if (r >= rounds.length) { o.onDone(first, rounds.length); return; }
+      if (r >= rounds.length) { o.onDone(first, rounds.length, cau); return; }
       const R = rounds[r]; tried = false;
       el.innerHTML = `${o.head}<div class="quiz"><div class="top-line"><span>Câu ${r + 1}/${rounds.length}</span><span class="pips">${rounds.map((_, i) => `<i class="${i < r ? 'done' : i === r ? 'now' : ''}"></i>`).join('')}</span></div>
         <div class="q">${R.q}</div>${R.qen ? `<p class="en" style="margin-top:6px">${R.qen}</p>` : ''}
@@ -400,6 +410,7 @@
     function pick(b) {
       const R = rounds[r], i = +b.dataset.i, fb = el.querySelector('#qfb');
       if (b.classList.contains('ok') || el.querySelector('.opt.ok')) return;
+      if (!tried && R.tu) { const c = { ma: R.ma, tu: tuDich(R.tu), dung: i === R.ans, mang: R.mang }; if (!c.dung) c.loi = R.loi ? R.loi(R.opts[i]) : 'khac'; if (!c.ma) delete c.ma; cau.push(c); }
       if (i === R.ans) {
         b.classList.add('ok'); sfx.ok(); if (!tried) first++;
         if (R.fill) { const bl = el.querySelector('.blank'); if (bl) bl.textContent = R.fill; }
@@ -435,9 +446,10 @@
     }
     const rounds = shuffle(keys).slice(0, Math.min(6, keys.length)).map((w) => {
       const opts = shuffle([w, ...otherWords(t, w, 3)]);
-      return { q: `Từ nào có nghĩa là: <span style="color:var(--wood-d)">“${esc(t.words[w][0])}”</span>?`, qen: '', hint: t.words[w][1], opts, ans: opts.indexOf(w), say: w };
+      return { q: `Từ nào có nghĩa là: <span style="color:var(--wood-d)">“${esc(t.words[w][0])}”</span>?`, qen: '', hint: t.words[w][1], opts, ans: opts.indexOf(w), say: w,
+        tu: w, mang: 'tu-vung', loi: (chon) => doanLoi(w, chon, 'nghia') };
     });
-    runQuiz(el, rounds, { words: true, head: head('Đố từ', 'Which word matches the meaning? Tap “EN” for an English hint.') + trau('thinking', 'Mình đọc nghĩa, các bạn tìm từ đúng nhé!', 'I read the meaning — you find the word!'), onDone: (f, n) => { award(t, 'do'); ghiKQ(t, 'do', f, n); el.innerHTML = doneBox(t, 'do', f, n, 'Các bạn nhớ từ giỏi quá!'); } });
+    runQuiz(el, rounds, { words: true, head: head('Đố từ', 'Which word matches the meaning? Tap “EN” for an English hint.') + trau('thinking', 'Mình đọc nghĩa, các bạn tìm từ đúng nhé!', 'I read the meaning — you find the word!'), onDone: (f, n, cau) => { award(t, 'do'); ghiKQ(t, 'do', f, n, cau); el.innerHTML = doneBox(t, 'do', f, n, 'Các bạn nhớ từ giỏi quá!'); } });
   }
 
   /* 6 · điền từ: câu lấy từ chính trang truyện, chỗ trống là từ cần nhớ */
@@ -456,17 +468,18 @@
       if (cl > op) after = after.replace(/”(?=[^”]*$)/, '');
       if (op > cl) { if (before.includes('“')) before = before.replace('“', ''); else after = after.replace('“', ''); }
       const opts = shuffle([k, ...otherWords(t, k, 3)]);
-      return { q: `${esc(before)}<span class="blank">______</span>${esc(after)}`, opts, ans: opts.indexOf(k), fill: m[1], hint: t.words[k] ? t.words[k][0] : '', say: before + m[1] + after };
+      return { q: `${esc(before)}<span class="blank">______</span>${esc(after)}`, opts, ans: opts.indexOf(k), fill: m[1], hint: t.words[k] ? t.words[k][0] : '', say: before + m[1] + after,
+        tu: k, mang: 'tu-vung', loi: (chon) => doanLoi(k, chon, 'nghia') };
     });
   }
   function pFill(t, el) {
-    runQuiz(el, fillRounds(t), { words: true, head: head('Điền từ vào chỗ trống', 'Choose the missing word.') + trau('listening', 'Câu này đang thiếu một từ. Các bạn chọn từ đúng để điền vào chỗ trống nhé!', 'One word is missing. Choose the right one!'), onDone: (f, n) => { award(t, 'dien'); ghiKQ(t, 'dien', f, n); el.innerHTML = doneBox(t, 'dien', f, n, 'Điền đúng hết rồi!'); } });
+    runQuiz(el, fillRounds(t), { words: true, head: head('Điền từ vào chỗ trống', 'Choose the missing word.') + trau('listening', 'Câu này đang thiếu một từ. Các bạn chọn từ đúng để điền vào chỗ trống nhé!', 'One word is missing. Choose the right one!'), onDone: (f, n, cau) => { award(t, 'dien'); ghiKQ(t, 'dien', f, n, cau); el.innerHTML = doneBox(t, 'dien', f, n, 'Điền đúng hết rồi!'); } });
   }
 
   /* 7 · tình huống */
   function pSituation(t, el) {
-    const rounds = t.quiz.map(([q, opts, ans, why]) => { const order = shuffle(opts.map((_, i) => i)); return { q: esc(q), opts: order.map((i) => opts[i]), ans: order.indexOf(ans), why }; });
-    runQuiz(el, rounds, { head: head('Câu đố tình huống', 'What happens in the story — and what would you do?') + trau('thinking', 'Các bạn đọc kỹ rồi chọn câu trả lời nhé. Không có gì phải vội!', 'Read carefully and choose. No need to hurry!'), onDone: (f, n) => { award(t, 'th'); ghiKQ(t, 'th', f, n); el.innerHTML = doneBox(t, 'th', f, n, 'Các bạn suy nghĩ thật giỏi!'); } });
+    const rounds = t.quiz.map(([q, opts, ans, why], qi) => { const order = shuffle(opts.map((_, i) => i)); return { q: esc(q), opts: order.map((i) => opts[i]), ans: order.indexOf(ans), why, ma: 'q' + (qi + 1), tu: q, mang: 'doc-hieu', loi: () => 'khac' }; });
+    runQuiz(el, rounds, { head: head('Câu đố tình huống', 'What happens in the story — and what would you do?') + trau('thinking', 'Các bạn đọc kỹ rồi chọn câu trả lời nhé. Không có gì phải vội!', 'Read carefully and choose. No need to hurry!'), onDone: (f, n, cau) => { award(t, 'th'); ghiKQ(t, 'th', f, n, cau); el.innerHTML = doneBox(t, 'th', f, n, 'Các bạn suy nghĩ thật giỏi!'); } });
   }
 
   /* 8 · suy ngẫm */

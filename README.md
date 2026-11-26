@@ -95,6 +95,19 @@ Góc học chỉ mở trong khung của cổng https://vietclass.cvcec.org (bộ
 
 Ghi kết quả lên cổng (từ 17-11-2026): xong một phần có sao thì gọi `TTV.ghiKetQua` với `bai` = `t01` … `t30`, `hoatDong` = `doc` | `xep` | `do` | `dien` | `th` | `sn`, `soTroChoi` = 6. Không thêm khoá localStorage mới.
 
+### Kết quả từng câu (từ 26-11-2026)
+
+Cùng lần gọi `TTV.ghiKetQua`, bốn trò có câu hỏi gửi thêm `cau: [{ ma, tu, dung, mang, loi }]` (tối đa 40). `dung` = đúng ngay lần chọn/xếp đầu; `tu` luôn lấy từ dữ liệu truyện (tối đa 30 ký tự), không bao giờ là chữ học sinh viết.
+
+| Trò | `ma` | `tu` | `mang` | `loi` khi sai |
+|---|---|---|---|---|
+| `xep` Xếp tranh | `p01`… (số trang) | tiêu đề trang | `doc-hieu` | `trat-tu` |
+| `do` Đố từ | (bỏ trống, lấy từ `tu`) | từ cần nhớ | `tu-vung` | `TTV.loaiLoi(đáp án, từ đã chọn)` nếu có, không thì `nghia` |
+| `dien` Điền từ | (bỏ trống) | từ cần điền | `tu-vung` | như Đố từ |
+| `th` Tình huống | `q1`… (thứ tự trong `quiz`) | câu hỏi | `doc-hieu` | `khac` |
+
+`doc` (đọc sách lật) và `sn` (suy ngẫm – bài viết tự do của học sinh, chỉ lưu trên máy) không có câu chấm đúng/sai nên không gửi `cau`. Bộ mẫu cũ bỏ qua trường này.
+
 Ngôi sao, Sổ từ và bài suy ngẫm được lưu trên trình duyệt của từng máy (không cần đăng nhập). Đổi máy hoặc xóa dữ liệu trình duyệt thì bắt đầu lại.
 
 ## Chỉ xem trực tuyến (bảo vệ nội dung)
