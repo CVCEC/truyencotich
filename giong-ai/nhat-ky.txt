@@ -35,3 +35,4 @@ Lô 8 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
 0.94  Bác Tai nói: “Lão Miệng có ăn thì chúng ta mới có sức. Chúng ta sai rồi!”  |  Bác Tài nói, lão miệng có ăn thì chúng ta mới có sức, chúng ta sai rồi.
 1.00  Cả bọn đến xin lỗi lão Miệng, lại cùng nhau hợp sức làm việc. Lão Miệng được ăn, ai cũng khỏe lại.  |  Cả bọn đến xin lỗi lão miệng lại cùng nhau hợp sức làm việc. Lão miệng được ăn, ai cũng khỏe lại.
 0.94  Từ đó, cả năm bạn sống vui vẻ, mỗi người một việc, không ai tị nạnh ai nữa.  |  Từ đó, cả 5 bạn sống vui vẻ, mỗi người một việc, không ai tị nạch ai nữa.
+1.00  Mỗi người một việc, ai cũng quan trọng. Hãy đoàn kết, giúp đỡ nhau, đừng so bì, tị nạnh.  |  Mỗi người một việc, ai cũng quan trọng. Hãy đoàn kết, giúp đỡ nhau, đừng so bì, tị nạnh.
