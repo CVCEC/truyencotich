@@ -43,3 +43,5 @@ Lô 6 câu – Gemini không trả tiếng: không có tiếng trả về: {"can
 0.90  Quỷ tức giận, đòi lại đất. Bụt bảo người xin quỷ một chỗ đất nhỏ, chỉ bằng bóng chiếc áo cà sa. Quỷ nghĩ áo bé tí nên đồng ý ngay.  |  Quỷ tức giận, đòi lại đất. Bụt bảo người xin quỷ một chỗ đất nhỏ, chỉ băng bóng chiếc áo cả xa. Quỷ nghĩ áo bé tí nên đồng ý ngay.
 0.87  Người dựng một cây tre thật cao, treo áo cà sa lên ngọn. Bụt làm phép, áo rộng ra, bóng áo che kín khắp nơi. Quỷ phải lùi ra tận biển.  |  Người dựng một cây che thật cao, treo áo cả xa lên ngọn. Bụt làm phép, áo rộng ra, bóng áo che kín khắp nơi. Quỳ phải lùi ra tận biển.
 0.90  Quỷ xin Bụt cho về thăm đất cũ mấy ngày Tết. Bụt cho phép, nhưng dặn người dựng cây nêu, treo chuông khánh để quỷ không dám lại gần.  |  Quỳ xin bụt cho về thăm đất cũ mấy ngày Tết. Bụt cho phép, nhưng dặn người dựng cây neo, treo chuông khánh để Quỳ không dám lại gần.
+Lô 3 câu bị cắt lệch (ví dụ: Ngày nay, nhiều nơi vẫn giữ phong tục dự) – chia đôi để đọc lại
+0.95  Từ đó, mỗi dịp Tết, người ta dựng cây nêu trước nhà để xua điều xấu, đón điều lành.  |  Từ đó, mỗi dịp Tết, người ta dựng cây neo trước nhà để xua điều xấu, đón điều lành.
