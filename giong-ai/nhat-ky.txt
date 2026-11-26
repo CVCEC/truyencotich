@@ -7,3 +7,11 @@
 0.82  Quạ đen sì từ đầu đến chân, buồn lắm. Từ đó, quạ chỉ có bộ lông đen.  |  Quả đen xì từ đầu đến chân, buồn lắm. Từ đó, quả chỉ có bộ lông đen.
 0.96  Công thì đẹp, nhưng ai cũng nhắc chuyện Công vô tâm với bạn. Làm việc gì cũng nên chu đáo như Quạ các bạn nhé.  |  Công thì đẹp, nhưng ai cũng nhắc chuyện công vô tâm với bạn. Làm việc gì cũng nên chu đáo như quả các bạn nhé.
 0.95  Hãy làm việc cẩn thận, chu đáo, và đối xử tốt với bạn như bạn đã đối xử tốt với mình.  |  Hãy làm việc cẩn thận, chú đáo và đối xử tốt với bạn như bạn đã đối xử tốt với mình.
+Lô 7 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
+0.80  Sự tích hồ Ba Bể  |  Sự tích hồ 3B
+1.00  Ngày xưa, ở một vùng núi phía Bắc, dân làng mở hội lớn. Ai cũng ăn uống, vui chơi.  |  Ngày xưa, ở một vùng núi phía Bắc, dân làng mở hội lớn, ai cũng ăn uống vui chơi.
+0.96  Có một bà cụ ăn xin, quần áo rách rưới, đến xin ăn. Không ai cho bà, người ta còn xua đuổi bà đi.  |  Có một bà cụ ăn xin, quần áo rách dưới, đến xin ăn. Không ai cho bà, người ta còn xua đuổi bà đi.
+0.94  Chỉ có mẹ con bà góa nghèo đưa bà cụ về nhà, mời cơm, cho ngủ nhờ.  |  Chỉ có mẹ con bà quá nghèo, đưa bà cụ về nhà, mời cơm cho ngủ nhờ.
+0.95  Đêm ấy, chỗ bà cụ nằm bỗng sáng rực lên. Mẹ con bà góa biết bà cụ không phải người thường.  |  Đêm ấy, chỗ bà cụ nằm bỗng sáng rực lên. Mẹ con bà quá biết bà cụ không phải người thường.
+0.87  Sáng ra, bà cụ đưa cho mẹ con một gói tro và hai mảnh vỏ trấu: “Sắp có lụt lớn. Rắc tro quanh nhà, còn vỏ trấu sẽ thành thuyền.”  |  Sáng ra, bà cụ đưa cho mẹ con một gói cho và hai mảnh vỏ chấu. Sắp có lụt lớn, rắc cho quanh nhà, còn vỏ chấu sẽ thành thuyền.
+0.93  Đêm đó, nước phun lên từ lòng đất, ngập cả làng. Nhà mẹ con bà góa không bị ngập. Hai mảnh vỏ trấu biến thành hai chiếc thuyền.  |  Đêm đó nước phun lên từ lòng đất ngập cả làng, nhà mẹ con bà Hóa không bị ngập, hai mảnh vỏ chấu biến thành hai chiếc thuyền.
