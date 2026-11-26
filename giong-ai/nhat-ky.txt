@@ -27,3 +27,11 @@ Lô 8 câu: khoảng lặng chưa rõ, cắt theo mốc chữ của Whisper
 0.87  Chuột cống già bảo: “Ý của chú thì chú đi đi!” Chuột nhắt run rẩy: “Cháu… cháu bé lắm, cháu không dám đâu!”  |  Chuột cống dạ bảo, Ý của chú thì chú đi đi, Chuột nhắt dun giày, Cháu, cháu bé lắm, cháu không dám đâu.
 0.95  Cuối cùng, chẳng con nào dám đi. Kế hoạch hay mấy cũng bỏ đó, và mèo vẫn rình bắt chuột như xưa.  |  Cuối cùng chẳng con nào dám đi, kế hoạch hay mấy cũng bỏ đó và mèo vẫn dình bắt chuột như xưa.
 1.00  Nói thì dễ, làm mới khó. Một ý kiến hay chỉ thành công khi có người dám nhận việc và bắt tay vào làm.  |  Nói thì dễ, làm mới khó, một ý kiến hay chỉ thành công khi có người dám nhận việc và bắt tay vào làm.
+1.00  Chân, Tay, Tai, Mắt, Miệng  |  chân, tay, tai, mắt, miệng
+1.00  Ngày xưa, Chân, Tay, Tai, Mắt và Miệng sống thân thiết với nhau trong một cơ thể. Ai cũng có việc của mình.  |  Ngày xưa, chân, tay, tai, mắt và miệng sống thân thiết với nhau trong một cơ thể. Ai cũng có việc của mình.
+1.00  Một hôm, cô Mắt nói: “Chúng ta làm lụng vất vả, còn lão Miệng chẳng làm gì, chỉ ăn không!”  |  Một hôm, Cô Mắt nói Chúng ta làm lụng vất vả Còn lão miệng chẳng làm gì, chỉ ăn không
+1.00  Cậu Chân, cậu Tay đồng ý ngay. Cả bọn kéo đến nhà lão Miệng: “Từ nay chúng tôi không làm để nuôi lão nữa!”  |  Cậu chân, cậu tay đồng ý ngay, cả bọn kéo đến nhà lão miệng, từ nay chúng tôi không làm để nuôi lão nữa.
+0.87  Mấy ngày sau, cả bọn thấy rã rời. Chân không muốn đi, Tay không muốn cầm, Mắt lờ đờ, Tai cứ ù ù.  |  Mấy ngày sau, cả bọn thấy dã rời Chân không muốn đi, tay không muốn cầm Mắt lờ đờ, tai cứ ủ ủ
+0.94  Bác Tai nói: “Lão Miệng có ăn thì chúng ta mới có sức. Chúng ta sai rồi!”  |  Bác Tài nói, lão miệng có ăn thì chúng ta mới có sức, chúng ta sai rồi.
+1.00  Cả bọn đến xin lỗi lão Miệng, lại cùng nhau hợp sức làm việc. Lão Miệng được ăn, ai cũng khỏe lại.  |  Cả bọn đến xin lỗi lão miệng lại cùng nhau hợp sức làm việc. Lão miệng được ăn, ai cũng khỏe lại.
+0.94  Từ đó, cả năm bạn sống vui vẻ, mỗi người một việc, không ai tị nạnh ai nữa.  |  Từ đó, cả 5 bạn sống vui vẻ, mỗi người một việc, không ai tị nạch ai nữa.
